@@ -13,6 +13,9 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://api.fontshare.com">
+		<link rel="dns-prefetch" href="https://api.fontshare.com" />
+		<link href="https://api.fontshare.com/v2/css?f[]=clash-display@700&display=swap" rel="stylesheet">
 		<title>{title}</title>
 	</head>
 	<body>
@@ -21,7 +24,7 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	html {
-		font-family: sans-serif;
+		font-family: 'Clash Display', sans-serif;
 		background-color: #F6F6F6;
 	}
 </style>
