@@ -1,4 +1,6 @@
 ---
+import { Tooltips } from 'astro-tooltips';
+
 export interface Props {
 	title: string;
 	pageTitle: string;
@@ -31,6 +33,7 @@ const fontshareUrl = "https://api.fontshare.com"
 		<link rel="preconnect" href={fontshareUrl} />
 		<link rel="dns-prefetch" href={fontshareUrl} />
 		<link href="https://api.fontshare.com/v2/css?f[]=clash-display@700&display=swap" rel="stylesheet">
+		<Tooltips interactive={false} delay={[1, 10]} placement="top" />
 		<title>{pageTitle}</title>
 	</head>
 	<body>
