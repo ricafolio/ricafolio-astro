@@ -6,8 +6,9 @@ import LinkBar from '../components/LinkBar.astro';
 <Layout title="Ricafolio" pageTitle="ricafolio.me | web developer" description="Hi! 👋 I'm Rica, a web designer & developer | Passionate about creating visually stunning and user-friendly websites">
 	<main>
 		<div class="flex-center">
-			<h1>Ricafolio</h1>
-			<h2>Front-end Developer</h2>
+			<h1>
+				Hello, I'm <span id="gradient-text">Rica</span>, a web developer based in Philippines.
+			</h1>
 			<LinkBar />
 		</div>
 	</main>
@@ -21,15 +22,18 @@ import LinkBar from '../components/LinkBar.astro';
 		padding: 1.5rem;
 		max-width: 60ch;
 	}
-	h1 {
-		font-size: 7rem;
-		font-weight: 800;
+	#gradient-text {
 		margin: 0;
 		background: radial-gradient(104.58% 104.45% at 18.91% 52.2%, rgba(255, 199, 0, 0.2) 0%, rgba(255, 199, 0, 0) 100%), radial-gradient(96.22% 70.96% at 70.08% 82.42%, rgba(130, 4, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(110.73% 50% at 50% 0%, #FD8AFF 0%, rgba(255, 255, 255, 0) 100%), #FFFBF4;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 600;
+	}
 	h2 {
+		font-size: 2.5rem;
 		font-family: 'Satoshi', sans-serif;
 		font-weight: 400;
 		color: rgb(169, 163, 168);
@@ -43,17 +47,12 @@ import LinkBar from '../components/LinkBar.astro';
 	}
 	@media screen and (max-width: 1024px) {
 		h1 {
-			font-size: 6rem;
+			font-size: 3.3rem;
 		}
 	}
 	@media screen and (max-width: 768px) {
 		h1 {
-			font-size: 5rem;
-		}
-	}
-	@media screen and (max-width: 640px) {
-		h1 {
-			font-size: 4rem;
+			font-size: 2.5rem;
 		}
 	}
 </style>
