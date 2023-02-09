@@ -5,58 +5,41 @@ import LinkBar from '../components/LinkBar.astro';
 
 <Layout>
 	<main class="text-white">
+		<!-- NAV -->
 		<div class="flex justify-center font-satoshi text-sm sm:text-base">
 			<div class="flex bg-zinc-800 rounded-b-lg">
 				<a href="#" class="px-8 py-5 text-zinc-300 hover:text-white ease-linear duration-150">About</a>
 				<a href="#coming_soon" class="px-8 py-5 text-zinc-300 hover:text-white ease-linear duration-150">Projects</a>
 			</div>
 		</div>
-		<div class="content mx-auto flex-center">
-			<h1>Hello, I'm <span id="gradient-text">Rica</span>, a web developer based in Philippines.</h1>
+
+		<!-- BODY -->
+		<div class="container mx-auto flex flex-col justify-evenly h-80">
+			<div class="w-5/6 sm:w-3/6 mx-auto flex justify-center align-center">
+				<h1 class="text-5xl lg:text-6xl">Hello, I'm <span id="gradient-text">Rica</span>, a web developer based in Philippines.</h1>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<div class="flex justify-center align-center">
 			<LinkBar />
 		</div>
 	</main>
 </Layout>
 
 <style>
-	main {
-		color: white;
-		margin: auto;
-		height: 80vh;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
 	#gradient-text {
 		margin: 0;
 		background: radial-gradient(104.58% 104.45% at 18.91% 52.2%, rgba(255, 199, 0, 0.2) 0%, rgba(255, 199, 0, 0) 100%), radial-gradient(96.22% 70.96% at 70.08% 82.42%, rgba(130, 4, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(110.73% 50% at 50% 0%, #FD8AFF 0%, rgba(255, 255, 255, 0) 100%), #FFFBF4;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 600;
-	}
-	h2 {
-		font-size: 2.5rem;
+	.font-satoshi {
 		font-family: 'Satoshi', sans-serif;
-		font-weight: 400;
-		color: rgb(169, 163, 168);
+		font-weight: 500;
+		color: #eeeeee;
 	}
-	.flex-center {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-	}
-	@media screen and (max-width: 1024px) {
-		h1 {
-			font-size: 3.3rem;
-		}
-	}
-	@media screen and (max-width: 768px) {
-		h1 {
-			font-size: 2.5rem;
-		}
+	.h-80 {
+		height: 80vh;
 	}
 </style>
