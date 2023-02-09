@@ -1,13 +1,9 @@
 ---
 import { Tooltips } from 'astro-tooltips';
 
-export interface Props {
-	title: string;
-	pageTitle: string;
-	description: string;
-}
-
-const { title, pageTitle, description } = Astro.props;
+const title = "Ricafolio"
+const pageTitle = "ricafolio.me | web developer"
+const description = "Hi! 👋 I'm Rica, a web designer & developer, passionate about creating visually stunning and user-friendly websites"
 const url = "https://ricafolio.me"
 const fontshareUrl = "https://api.fontshare.com"
 ---
@@ -32,17 +28,37 @@ const fontshareUrl = "https://api.fontshare.com"
 		<meta name="twitter:description" content={description}>
 		<link rel="preconnect" href={fontshareUrl} />
 		<link rel="dns-prefetch" href={fontshareUrl} />
-		<link href="https://api.fontshare.com/v2/css?f[]=clash-display@700&display=swap" rel="stylesheet">
+		<link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600&f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
 		<Tooltips interactive={false} delay={[1, 10]} placement="top" />
 		<title>{pageTitle}</title>
 	</head>
-	<body>
+	<body >
 		<slot />
+		<div id="tsparticles"></div>
 	</body>
 </html>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/tsparticles@2.8.0/tsparticles.bundle.min.js"></script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/tsparticles-preset-firefly@2/tsparticles.preset.firefly.bundle.min.js"></script>
+
+<script>
+(async () => {
+  await loadFireflyPreset(tsParticles); // this is required only if you are not using the bundle script
+
+  await tsParticles.load("tsparticles", {
+    preset: "firefly",
+		particles: {
+			color: {
+				value: "#f9c7ffa3"
+			}
+		}
+  })
+})()
+</script>
+
 <style is:global>
 	::selection {
-		background-color: #fffeed26;
+		background-color: #ffffff45;
 	}
 	html {
 		font-family: 'Clash Display', sans-serif;
