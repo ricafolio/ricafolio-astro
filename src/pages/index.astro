@@ -4,9 +4,15 @@ import LinkBar from '../components/LinkBar.astro';
 ---
 
 <Layout>
-			<h1>
-				Hello, I'm <span id="gradient-text">Rica</span>, a web developer based in Philippines.
-			</h1>
+	<main class="text-white">
+		<div class="flex justify-center font-satoshi text-sm sm:text-base">
+			<div class="flex bg-zinc-800 rounded-b-lg">
+				<a href="#" class="px-8 py-5 text-zinc-300 hover:text-white ease-linear duration-150">About</a>
+				<a href="#coming_soon" class="px-8 py-5 text-zinc-300 hover:text-white ease-linear duration-150">Projects</a>
+			</div>
+		</div>
+		<div class="content mx-auto flex-center">
+			<h1>Hello, I'm <span id="gradient-text">Rica</span>, a web developer based in Philippines.</h1>
 			<LinkBar />
 		</div>
 	</main>
