@@ -32,10 +32,25 @@ const fontshareUrl = "https://api.fontshare.com"
 		<Tooltips interactive={false} delay={[1, 10]} placement="top" />
 		<title>{pageTitle}</title>
 	</head>
-	<body>
+	<body >
 		<slot />
+		<div id="tsparticles"></div>
 	</body>
 </html>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/tsparticles@2.8.0/tsparticles.bundle.min.js"></script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/tsparticles-preset-firefly@2/tsparticles.preset.firefly.bundle.min.js"></script>
+
+<script>
+(async () => {
+  await loadFireflyPreset(tsParticles); // this is required only if you are not using the bundle script
+
+  await tsParticles.load("tsparticles", {
+    preset: "firefly"
+  })
+})()
+</script>
+
 <style is:global>
 	::selection {
 		background-color: #ffffff45;
