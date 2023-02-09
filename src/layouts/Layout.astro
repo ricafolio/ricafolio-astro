@@ -46,7 +46,12 @@ const fontshareUrl = "https://api.fontshare.com"
   await loadFireflyPreset(tsParticles); // this is required only if you are not using the bundle script
 
   await tsParticles.load("tsparticles", {
-    preset: "firefly"
+    preset: "firefly",
+		particles: {
+			color: {
+				value: "#f9c7ffa3"
+			}
+		}
   })
 })()
 </script>
