@@ -5,6 +5,9 @@ module.exports = {
 		extend: {
 			height: {
 				'80': '80vh'
+			},
+			fontFamily: {
+				'satoshi': ['Satoshi', 'sans-serif']
 			}
 		}
 	},
