@@ -7,7 +7,8 @@ module.exports = {
 				'80': '80vh'
 			},
 			fontFamily: {
-				'satoshi': ['Satoshi', 'sans-serif']
+				'satoshi': ['Satoshi', 'sans-serif'],
+				'clash': ['Clash Display', 'sans-serif'],
 			}
 		}
 	},
