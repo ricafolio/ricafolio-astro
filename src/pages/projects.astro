@@ -8,10 +8,11 @@ import NavBar from '../components/NavBar.astro';
     <NavBar page="projects" />
     
     <!-- BODY -->
-		<div class="container mx-auto flex flex-col h-80 mt-16">
+		<div class="container mx-auto flex flex-col mt-16">
 			<div class="w-5/6 sm:w-3/6 mx-auto flex flex-col align-center">
 				<h1 class="text-4xl font-clash">Projects</h1>
-        <div class="flex flex-row w-full mt-6">
+        
+        <section class="flex flex-row w-full my-12">
           <div class="w-full md:w-3/6">
             <img src="/img/wenmint.jpg" alt="WenMint | NFT Calendar" />
           </div>
@@ -21,11 +22,11 @@ import NavBar from '../components/NavBar.astro';
               <p class="text-xl text-zinc-300">NFT Drops Calendar</p>
             </div>
             <div class="my-3">
-              <span class="inline-block bg-zinc-800 rounded py-3 px-5">Nuxt 2</span>
-              <span class="inline-block bg-zinc-800 rounded py-3 px-5">Strapi</span>
+              <span class="inline-block bg-zinc-800 rounded py-3 px-5 mt-1">Nuxt 2</span>
+              <span class="inline-block bg-zinc-800 rounded py-3 px-5 mt-1">Strapi</span>
             </div>
             <div>
-              <a href="https://wenmint.io" target="_blank" class="inline-block border-2 border-zinc-800 hover:border-zinc-400 ease-in duration-150 rounded py-3 px-5">
+              <a href="https://wenmint.io" target="_blank" class="inline-block border border-zinc-800 hover:border-zinc-400 ease-in duration-150 rounded py-3 px-5">
                 <span class="flex items-center justify-center">
                   <span>Live demo</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" class="ml-2"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z" fill="rgba(236,240,241,1)"/></svg>
@@ -33,7 +34,61 @@ import NavBar from '../components/NavBar.astro';
               </a>
             </div>
           </div>
-        </div>
+        </section>
+
+        <!-- premint links bot / node.js / twitter api / discord.js -->
+        <section class="flex flex-row w-full my-12">
+          <div class="w-full md:w-3/6">
+            <img src="/img/wenmint.jpg" alt="WenMint | NFT Calendar" />
+          </div>
+          <div class="w-full md:w-3/6 px-6 flex flex-col justify-center">
+            <div>
+              <h2 class="text-3xl font-clash">Premint Links Discord Bot</h2>
+              <p class="text-xl text-zinc-300">Bot that scrapes latest premint links shared across Twitter</p>
+            </div>
+            <div class="my-3">
+              <span class="inline-block bg-zinc-800 rounded py-3 px-5 mt-1">Node.js</span>
+              <span class="inline-block bg-zinc-800 rounded py-3 px-5 mt-1">Discord.js</span>
+              <span class="inline-block bg-zinc-800 rounded py-3 px-5 mt-1">Twitter API</span>
+              <span class="inline-block bg-zinc-800 rounded py-3 px-5 mt-1">Cron job</span>
+            </div>
+            <div>
+              <a href="https://top.gg/bot/1006311461175443526" target="_blank" class="inline-block border border-zinc-800 hover:border-zinc-400 ease-in duration-150 rounded py-3 px-5">
+                <span class="flex items-center justify-center">
+                  <span>Live demo</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" class="ml-2"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z" fill="rgba(236,240,241,1)"/></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- nft referral / node.js / twitter api / discord.js -->
+        <section class="flex flex-row w-full my-12">
+          <div class="w-full md:w-3/6">
+            <img src="/img/wenmint.jpg" alt="WenMint | NFT Calendar" />
+          </div>
+          <div class="w-full md:w-3/6 px-6 flex flex-col justify-center">
+            <div>
+              <h2 class="text-3xl font-clash">NFT Referral</h2>
+              <p class="text-xl text-zinc-300">Referral campaign for a NFT project, 20k+ people joined in 3 days</p>
+            </div>
+            <div class="my-3">
+              <span class="inline-block bg-zinc-800 rounded py-3 px-5 mt-1">Nuxt.js</span>
+              <span class="inline-block bg-zinc-800 rounded py-3 px-5 mt-1">Strapi</span>
+              <span class="inline-block bg-zinc-800 rounded py-3 px-5 mt-1">Node.js</span>
+              <span class="inline-block bg-zinc-800 rounded py-3 px-5 mt-1">Twitter API</span>
+            </div>
+            <div>
+              <a href="https://top.gg/bot/1006311461175443526" target="_blank" class="inline-block border border-zinc-800 hover:border-zinc-400 ease-in duration-150 rounded py-3 px-5">
+                <span class="flex items-center justify-center">
+                  <span>Live demo</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" class="ml-2"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z" fill="rgba(236,240,241,1)"/></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
 			</div>
 		</div>
   </main>
