@@ -4,11 +4,11 @@ import NavBar from '../components/NavBar.astro';
 ---
 
 <Layout doIndex={false}>
-	<main class="text-white">
+	<div class="text-white">
     <NavBar page="projects" />
     
     <!-- BODY -->
-		<div class="container mx-auto flex flex-col mt-16">
+		<main class="container mx-auto flex flex-col mt-16">
 			<div class="w-5/6 md:w-4/6 mx-auto flex flex-col align-center">
 				<h1 class="text-4xl font-clash">Projects</h1>
         
@@ -112,6 +112,6 @@ import NavBar from '../components/NavBar.astro';
           </div>
         </section>
 			</div>
-		</div>
-  </main>
+		</main>
+  </div>
 </Layout>

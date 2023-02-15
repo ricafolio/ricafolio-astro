@@ -1,9 +1,9 @@
 ---
 const { page } = Astro.props;
 ---
-<div class="flex justify-center font-satoshi font-medium text-sm sm:text-base">
+<header class="flex justify-center font-satoshi font-medium text-sm sm:text-base">
   <div class="flex bg-zinc-800 rounded-b-lg">
     <a href="/" class={"px-8 py-5 ease-linear duration-150 " + (page === 'about' ? 'text-white' : 'text-zinc-300 hover:text-white')}>About</a>
     <a href="/projects" class={"px-8 py-5 ease-linear duration-150 " + (page === 'projects' ? 'text-white' : 'text-zinc-300 hover:text-white')}>Projects</a>
   </div>
-</div>
+</header>
