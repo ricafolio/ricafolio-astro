@@ -1,9 +1,10 @@
 ---
 import { Tooltips } from 'astro-tooltips';
 
+const { doIndex } = Astro.props;
 const title = "Ricafolio"
 const pageTitle = "ricafolio.me | web developer"
-const description = "Hi! 👋 I'm Rica, a web designer & developer, passionate about creating visually stunning and user-friendly websites"
+const description = "Hi! 👋 I'm Rica, a web designer & developer from Philippines. Passionate about creating visually stunning and user-friendly websites."
 const url = "https://ricafolio.me"
 const fontshareUrl = "https://api.fontshare.com"
 ---
@@ -12,6 +13,7 @@ const fontshareUrl = "https://api.fontshare.com"
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		{doIndex && <meta name="robots" content="noindex">}
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
@@ -61,9 +63,8 @@ const fontshareUrl = "https://api.fontshare.com"
 		background-color: #ffffff45;
 	}
 	html {
-		font-family: 'Clash Display', sans-serif;
+		font-family: 'Satoshi', sans-serif;
 		background-color: #000;
-		overflow-y: hidden;
 	}
   .tippy-box[data-theme='default'] {
     background-color: rgb(177, 177, 177) !important;
@@ -72,5 +73,11 @@ const fontshareUrl = "https://api.fontshare.com"
   }
 	.tippy-arrow {
     color: rgb(177, 177, 177) !important;
+	}
+	.gradient-text {
+		margin: 0;
+		background: radial-gradient(104.58% 104.45% at 18.91% 52.2%, rgba(255, 199, 0, 0.2) 0%, rgba(255, 199, 0, 0) 100%), radial-gradient(96.22% 70.96% at 70.08% 82.42%, rgba(130, 4, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(110.73% 50% at 50% 0%, #FD8AFF 0%, rgba(255, 255, 255, 0) 100%), #FFFBF4;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 </style>
