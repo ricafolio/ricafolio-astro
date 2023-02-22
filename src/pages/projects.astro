@@ -14,7 +14,11 @@ import NavBar from '../components/NavBar.astro';
         
         <section class="flex flex-col md:flex-row w-full my-12">
           <div class="w-full md:w-3/6 mb-6 md:mb-0">
-            <img src="/img/mml.png" alt="MyManhwaList" class="rounded" />
+            <picture>
+              <source type="image/webp" srcset="/img/mml.webp">
+              <source type="image/png" srcset="/img/mml.png">
+              <img src="/img/mml.png" alt="MyManhwaList" loading="lazy">
+            </picture>
           </div>
           <div class="w-full md:w-3/6 px-0 md:px-6 flex flex-col justify-center">
             <div>
@@ -40,7 +44,11 @@ import NavBar from '../components/NavBar.astro';
 
         <section class="flex flex-col md:flex-row w-full my-12">
           <div class="w-full md:w-3/6 mb-6 md:mb-0">
-            <img src="/img/chef.png" alt="Chef" class="rounded" />
+            <picture>
+              <source type="image/webp" srcset="/img/chef.webp">
+              <source type="image/png" srcset="/img/chef.png">
+              <img src="/img/chef.png" alt="Chef" loading="lazy">
+            </picture>
           </div>
           <div class="w-full md:w-3/6 px-0 md:px-6 flex flex-col justify-center">
             <div>
@@ -66,7 +74,11 @@ import NavBar from '../components/NavBar.astro';
 
         <section class="flex flex-col md:flex-row w-full my-12">
           <div class="w-full md:w-3/6 mb-6 md:mb-0">
-            <img src="/img/bot.png" alt="Bot" class="rounded" />
+            <picture>
+              <source type="image/webp" srcset="/img/bot.webp">
+              <source type="image/png" srcset="/img/bot.png">
+              <img src="/img/bot.png" alt="Discord bot" loading="lazy">
+            </picture>
           </div>
           <div class="w-full md:w-3/6 px-0 md:px-6 flex flex-col justify-center">
             <div>
@@ -92,7 +104,11 @@ import NavBar from '../components/NavBar.astro';
 
         <section class="flex flex-col md:flex-row w-full mt-12 mb-32">
           <div class="w-full md:w-3/6 mb-6 md:mb-0">
-            <img src="/img/cult.png" alt="NFT Referral" class="rounded" />
+            <picture>
+              <source type="image/webp" srcset="/img/cult.webp">
+              <source type="image/png" srcset="/img/cult.png">
+              <img src="/img/cult.png" alt="NFT Referral Campaign" loading="lazy">
+            </picture>
           </div>
           <div class="w-full md:w-3/6 px-0 md:px-6 flex flex-col justify-center">
             <div>
