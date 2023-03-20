@@ -15,7 +15,7 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="mml"
-          progress={{text: "In progress", color: "text-pink-500"}}
+          progress={{text: "(In progress) Web dev project", color: "text-pink-500"}}
           title="MyManhwaList"
           description="Discover Manhwa reading lists"
           tools={['Next.js / React', 'Strapi', 'Tailwind CSS', 'Framer Motion']}
@@ -25,9 +25,9 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="orangey"
-          progress={null}
+          progress={{text: "Theme Design", color: "text-pink-500"}}
           title="Orangey"
-          description="Warm Dark Theme for VSCode"
+          description="Warm dark theme for VSCode"
           tools={['Visual Studio Code', 'Theme', 'Package']}
           url="https://marketplace.visualstudio.com/items?itemName=ricafolio.orangey-vscode-theme"
           url_text="Download extension"
@@ -35,7 +35,7 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="cbtv"
-          progress={null}
+          progress={{text: "Web dev project", color: "text-pink-500"}}
           title="CSS Box Transform Visualizer"
           description="Simple playground to quickly generate code for CSS3 Transforms"
           tools={['React', 'SASS', 'Vite']}
@@ -45,13 +45,13 @@ import Project from '../components/Project.astro';
 			</div>
 
       <div class="mx-auto flex flex-row flex-wrap align-center mb-8 md:mb-32">
-				<h1 class="w-full text-4xl font-clash mb-6">Client Projects</h1>
+				<h1 class="w-full text-4xl font-clash mb-6">Client Solo Projects</h1>
 
         <Project
           img_file_name="chef"
-          progress={null}
+          progress={{text: "Web dev project", color: "text-pink-500"}}
           title="Chef"
-          description="Responsive landing page"
+          description="Responsive landing page for a chrome extension"
           tools={['HTML', 'CSS', 'jQuery', 'Jekyll']}
           url="https://usechef.com/"
           url_text="View Project"
@@ -59,19 +59,19 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="wenmint"
-          progress={{text: "Offline", color: "text-red-500"}}
+          progress={{text: "(Offline) Full Stack Web Dev Project", color: "text-red-500"}}
           title="Wenmint.io"
           description="NFT Calendar"
-          tools={['Nuxt.js / Vue.js', 'Strapi', 'Discord API', 'Twitter API']}
+          tools={['Nuxt.js / Vue.js', 'Strapi', 'Discord API', 'Twitter API', 'SEO']}
           url="https://web.archive.org/web/20221207025634/https://wenmint.io/"
           url_text="View archived page"
         />
 
         <Project
           img_file_name="bot"
-          progress={{text: "Offline", color: "text-red-500"}}
+          progress={{text: "(Offline) Bot Project", color: "text-red-500"}}
           title="Premint Links Discord Bot"
-          description="Bot that scrapes latest premint links shared across Twitter, used by 300+ servers"
+          description="Bot that scrapes latest premint links shared across Twitter, used by 300+ Discord servers"
           tools={['Discord.js', 'Node.js', 'Twitter API']}
           url="https://top.gg/bot/1006311461175443526"
           url_text="View archived page"
@@ -79,9 +79,9 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="cult"
-          progress={{text: "Offline", color: "text-red-500"}}
+          progress={{text: "(Offline) Full Stack Web Dev Project", color: "text-red-500"}}
           title="NFT Referral"
-          description="Referral campaign system for NFT project"
+          description="Alt-proof referral campaign system for an NFT project, garnering 23k sign ups within 3 days"
           tools={['Nuxt.js', 'Strapi', 'Twitter OAuth']}
           url="https://twitter.com/search?q=cultofeth.xyz&src=typed_query&f=live"
           url_text="View campaign results"
