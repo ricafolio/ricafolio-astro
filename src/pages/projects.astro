@@ -18,9 +18,29 @@ import Project from '../components/Project.astro';
           progress={{text: "In progress", color: "text-pink-500"}}
           title="MyManhwaList"
           description="Discover Manhwa reading lists"
-          tools={['Next.js', 'Strapi', 'Tailwind CSS']}
+          tools={['Next.js / React', 'Strapi', 'Tailwind CSS', 'Framer Motion']}
           url="https://mymanhwalist-next.vercel.app"
-          url_text="Live demo"
+          url_text="View Project"
+        />
+
+        <Project
+          img_file_name="orangey"
+          progress={null}
+          title="Orangey"
+          description="Warm Dark Theme for VSCode"
+          tools={['Visual Studio Code', 'Theme', 'Package']}
+          url="https://marketplace.visualstudio.com/items?itemName=ricafolio.orangey-vscode-theme"
+          url_text="Download extension"
+        />
+
+        <Project
+          img_file_name="cbtv"
+          progress={null}
+          title="CSS Box Transform Visualizer"
+          description="Simple playground to quickly generate code for CSS3 Transforms"
+          tools={['React', 'SASS', 'Vite']}
+          url="https://github.com/ricafolio/box-transform-visualizer"
+          url_text="View Project"
         />
 			</div>
 
@@ -34,27 +54,37 @@ import Project from '../components/Project.astro';
           description="Responsive landing page"
           tools={['HTML', 'CSS', 'jQuery', 'Jekyll']}
           url="https://usechef.com/"
-          url_text="Live demo"
+          url_text="View Project"
+        />
+
+        <Project
+          img_file_name="wenmint"
+          progress={{text: "Offline", color: "text-red-500"}}
+          title="Wenmint.io"
+          description="NFT Calendar"
+          tools={['Nuxt.js / Vue.js', 'Strapi', 'Discord API', 'Twitter API']}
+          url="https://web.archive.org/web/20221207025634/https://wenmint.io/"
+          url_text="View archived page"
         />
 
         <Project
           img_file_name="bot"
-          progress={{text: "Demo offline", color: "text-red-500"}}
+          progress={{text: "Offline", color: "text-red-500"}}
           title="Premint Links Discord Bot"
-          description="Bot that scrapes latest premint links shared across Twitter"
+          description="Bot that scrapes latest premint links shared across Twitter, used by 300+ servers"
           tools={['Discord.js', 'Node.js', 'Twitter API']}
           url="https://top.gg/bot/1006311461175443526"
-          url_text="Product page"
+          url_text="View archived page"
         />
 
         <Project
           img_file_name="cult"
-          progress={{text: "Demo offline", color: "text-red-500"}}
+          progress={{text: "Offline", color: "text-red-500"}}
           title="NFT Referral"
           description="Referral campaign system for NFT project"
-          tools={['Nuxt.js', 'Strapi', 'Node.js', 'Twitter OAuth']}
+          tools={['Nuxt.js', 'Strapi', 'Twitter OAuth']}
           url="https://twitter.com/search?q=cultofeth.xyz&src=typed_query&f=live"
-          url_text="See campaign results"
+          url_text="View campaign results"
         />
       </div>
 		</main>
