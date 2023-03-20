@@ -15,7 +15,7 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="mml"
-          progress="In progress"
+          progress={{text: "In progress", color: "text-pink-500"}}
           title="MyManhwaList"
           description="Discover Manhwa reading lists"
           tools={['Next.js', 'Strapi', 'Tailwind CSS']}
@@ -35,7 +35,7 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="bot"
-          progress="Demo offline"
+          progress={{text: "Demo offline", color: "text-red-500"}}
           title="Premint Links Discord Bot"
           description="Bot that scrapes latest premint links shared across Twitter"
           tools={['Discord.js', 'Node.js', 'Twitter API']}
@@ -45,7 +45,7 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="cult"
-          progress="Demo offline"
+          progress={{text: "Demo offline", color: "text-red-500"}}
           title="NFT Referral"
           description="Referral campaign system for NFT project"
           tools={['Nuxt.js', 'Strapi', 'Node.js', 'Twitter OAuth']}
