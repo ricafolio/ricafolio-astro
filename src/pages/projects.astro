@@ -9,9 +9,9 @@ import Project from '../components/Project.astro';
     <NavBar page="projects" />
 
     <!-- BODY -->
-		<main class="container mx-auto flex flex-col mt-16">
-			<div class="w-5/6 md:w-4/6 mx-auto flex flex-col align-center">
-				<h1 class="text-4xl font-clash">Projects</h1>
+		<main class="container mx-auto flex flex-col mt-16 px-4 md:px-12">
+			<div class="mx-auto flex flex-row flex-wrap align-center mb-8 md:mb-32">
+				<h1 class="w-full text-4xl font-clash mb-6">Personal Projects</h1>
 
         <Project
           img_file_name="mml"
@@ -22,6 +22,10 @@ import Project from '../components/Project.astro';
           url="https://mymanhwalist-next.vercel.app"
           url_text="Live demo"
         />
+			</div>
+
+      <div class="mx-auto flex flex-row flex-wrap align-center mb-8 md:mb-32">
+				<h1 class="w-full text-4xl font-clash mb-6">Client Projects</h1>
 
         <Project
           img_file_name="chef"
@@ -52,7 +56,7 @@ import Project from '../components/Project.astro';
           url="https://twitter.com/search?q=cultofeth.xyz&src=typed_query&f=live"
           url_text="See campaign results"
         />
-			</div>
+      </div>
 		</main>
   </div>
 </Layout>
