@@ -7,9 +7,9 @@ const { img_file_name, progress, title, description, tools, url, url_text } = As
   <div class="bg-zinc-900 p-5 md:mr-4 rounded-md">
     <div class="mb-5">
       <picture>
-        <source type="image/webp" srcset={`/img/${img_file_name}.webp`}>
-        <source type="image/png" srcset={`/img/${img_file_name}.png`}>
-        <img src={`/img/${img_file_name}.png`} alt={title} loading="lazy">
+        <source type="image/webp" srcset={`/img/${img_file_name}.webp`} class="rounded-md">
+        <source type="image/png" srcset={`/img/${img_file_name}.png`} class="rounded-md">
+        <img src={`/img/${img_file_name}.png`} alt={title} loading="lazy" class="rounded-md">
       </picture>
     </div>
 
