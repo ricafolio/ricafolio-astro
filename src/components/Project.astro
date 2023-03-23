@@ -23,7 +23,7 @@ const { img_file_name, progress, title, description, tools, url, url_text, githu
 
       <div class="mt-1 mb-3">
         {tools.map((tool: String, i) => {
-          return <span class="inline-block select-none py-1 mt-1 mr-1">{tool} {i !== (tools.length -1) && <span class="text-gray-600 px-3">/</span>}</span>
+          return <span class="inline-block select-none py-1 mt-1 mr-1 text-gray-400">{tool} {i !== (tools.length -1) && <span class="text-gray-700/70 px-3">/</span>}</span>
         })}
       </div>
 
