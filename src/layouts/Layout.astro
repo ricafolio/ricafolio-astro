@@ -1,10 +1,9 @@
 ---
-import { Tooltips } from 'astro-tooltips';
-
-const { doIndex } = Astro.props;
-const title = "Ricafolio"
-const pageTitle = "ricafolio / web developer"
-const description = "Hi! 👋 I'm Rica, a web designer & developer from Philippines. Passionate about creating visually stunning and user-friendly websites."
+const { 
+	title = "ricafolio · web developer", 
+	description = "Hi! 👋 I'm Rica, a web designer & developer from Philippines. Passionate about creating visually stunning and user-friendly websites.",
+	doIndex 
+} = Astro.props
 const url = "https://ricafolio.me"
 const fontshareUrl = "https://api.fontshare.com"
 ---
@@ -16,6 +15,7 @@ const fontshareUrl = "https://api.fontshare.com"
 		{doIndex && <meta name="robots" content="noindex">}
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="theme-color" content="#000" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="title" content={title}>
 		<meta name="description" content={description}>
@@ -31,12 +31,20 @@ const fontshareUrl = "https://api.fontshare.com"
 		<link rel="preconnect" href={fontshareUrl} />
 		<link rel="dns-prefetch" href={fontshareUrl} />
 		<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,500&f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
-		<Tooltips interactive={false} delay={[1, 10]} placement="top" />
-		<title>{pageTitle}</title>
+		<title>{title}</title>
 	</head>
-	<body >
+	<body>
 		<slot />
-		<div id="tsparticles"></div>
+		<script>
+			import Swup from 'swup'
+			import SwupA11yPlugin from '@swup/a11y-plugin'
+			import SwupHeadPlugin from '@swup/head-plugin'
+			import SwupSlideTheme from '@swup/slide-theme'
+
+			const swup = new Swup({
+				plugins: [new SwupA11yPlugin(), new SwupHeadPlugin(), new SwupSlideTheme()],
+			})
+		</script>
 		<script type="text/javascript">
 			console.log(`
 				┏━━━┓╋╋╋╋╋╋╋┏━┓╋╋┏┓
@@ -50,46 +58,21 @@ const fontshareUrl = "https://api.fontshare.com"
 	</body>
 </html>
 
-<script is:inline src="https://cdn.jsdelivr.net/npm/tsparticles@2.8.0/tsparticles.bundle.min.js"></script>
-<script is:inline src="https://cdn.jsdelivr.net/npm/tsparticles-preset-firefly@2/tsparticles.preset.firefly.bundle.min.js"></script>
-
-<script>
-(async () => {
-  await loadFireflyPreset(tsParticles); // this is required only if you are not using the bundle script
-
-  await tsParticles.load("tsparticles", {
-    preset: "firefly",
-		particles: {
-			color: {
-				value: "#ff7d5e"
-			}
-		}
-  })
-})()
-</script>
-
 <style is:global>
 	::selection {
-		background-color: #ffffff45;
+		background-color: #3cff00b5;
 	}
-	html {
+	body {
 		font-family: 'Satoshi', sans-serif;
-		background-color: #000;
+		min-height: 100vh;
 	}
   .tippy-box[data-theme='default'] {
-    background-color: rgb(177, 177, 177) !important;
-    color: #000 !important;
-    font-family: sans-serif !important;
+    font-family: 'Satoshi', sans-serif;
+		font-weight: bold;
+		background-color: #000;
+		color: #fff;
   }
 	.tippy-arrow {
-    color: rgb(177, 177, 177) !important;
-	}
-	.gradient-text {
-		margin: 0;
-		background: radial-gradient(104.58% 104.45% at 18.91% 52.2%, rgba(255, 199, 0, 0.2) 0%, rgba(255, 199, 0, 0) 100%),
-			radial-gradient(96.22% 70.96% at 70.08% 82.42%, rgba(255, 4, 4, 0.2) 0%, rgba(0, 0, 0, 0) 100%), 
-			radial-gradient(110.73% 50% at 50% 0%, #FF3100 0%, rgba(255, 255, 255, 0) 100%), #FFFBF4;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+    color: #000;
 	}
 </style>
