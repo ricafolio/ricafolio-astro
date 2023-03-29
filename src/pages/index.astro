@@ -22,7 +22,7 @@ import LongStrip from "../components/LongStrip.astro"
 						</span>
 						<h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold font-clash uppercase mb-2">
 							Hello! I'm <span id="rica" class="styled-text border-2 sm:border-3 px-1 sm:px-3">Rica</span>,
-							<span class="block">A web developer based in <span id="ph">Philippines</span>.</span>
+							<span class="block">A web developer based in <span id="ph" class="ph-text">Philippines</span>.</span>
 						</h1>
 					</div>
 				</main>
@@ -60,6 +60,13 @@ import LongStrip from "../components/LongStrip.astro"
     border-color: #000;
     box-shadow: 3px 3px #000;
   }
+	.ph-text {
+		display: inline-block;
+    transition: all ease-in-out 200ms;
+	}
+	.ph-text:hover {
+		transform: skew(-8deg, 0deg);
+	}
 </style>
 
 <script>
