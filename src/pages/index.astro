@@ -17,9 +17,12 @@ import LongStrip from "../components/LongStrip.astro"
 
 				<main class="container mx-auto flex flex-col justify-evenly overflow-hidden">
 					<div class="w-full sm:w-4/6 lg:w-3/6 pl-8 pr-3 sm:px-0 mx-auto flex flex-col justify-center align-center">
+						<span id="emoji" class="block text-4xl sm:text-5xl lg:text-6xl mb-4">
+							👋
+						</span>
 						<h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold font-clash uppercase mb-2">
-							Hello! I'm <span class="styled-text border-2 sm:border-3 px-1 sm:px-3">Rica</span>,
-							<span class="block">A web developer based in Philippines.</span>
+							Hello! I'm <span id="rica" class="styled-text border-2 sm:border-3 px-1 sm:px-3">Rica</span>,
+							<span class="block">A web developer based in <span id="ph">Philippines</span>.</span>
 						</h1>
 					</div>
 				</main>
@@ -60,5 +63,19 @@ import LongStrip from "../components/LongStrip.astro"
 </style>
 
 <script>
-  console.log(123)
+  const rica = document.getElementById("rica")!
+  const ph = document.getElementById("ph")!
+  const emoji = document.getElementById("emoji")!
+	const setEmoji = (emojicon: string) => {
+		emoji.innerHTML = emojicon
+	}
+	const resetEmoji = () => {
+		emoji.innerHTML = "👋"
+	}
+
+	rica.addEventListener("mouseenter", () => {setEmoji("🤠")}, false)
+	rica.addEventListener("mouseleave", resetEmoji, false)
+
+	ph.addEventListener("mouseenter", () => {setEmoji("🇵🇭")}, false)	
+	ph.addEventListener("mouseleave", resetEmoji, false)
 </script>
