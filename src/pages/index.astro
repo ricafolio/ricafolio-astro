@@ -1,20 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import LinkBar from '../components/LinkBar.astro';
-import NavBar from '../components/NavBar.astro';
-import LongStrip from '../components/LongStrip.astro';
+import Layout from "../layouts/Layout.astro"
+import LinkBar from "../components/LinkBar.astro"
+import NavBar from "../components/NavBar.astro"
+import LongStrip from "../components/LongStrip.astro"
 ---
 
 <Layout doIndex={true}>
-	<div id="swup" class="container text-black">
-		<div class="flex">
-			<div class="w-1/12 sm:w-[2rem] bg-black	">
+  <div id="swup" class="container height-fix text-black">
+		<div class="height-fix-inner flex">
+			<div class="w-1/12 sm:w-[2rem] sm:flex-none bg-black">
 				<LongStrip />
 			</div>
 
-			<div class="w-11/12 sm:w-auto flex flex-col justify-between overflow-hidden">
+			<div class="w-11/12 sm:flex-1 flex flex-col justify-between overflow-hidden">
 				<NavBar page="about" />
-	
+
 				<main class="container mx-auto flex flex-col justify-evenly overflow-hidden">
 					<div class="w-full sm:w-4/6 lg:w-3/6 pl-8 pr-3 sm:px-0 mx-auto flex flex-col justify-center align-center">
 						<h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold font-clash uppercase mb-2">
@@ -23,26 +23,41 @@ import LongStrip from '../components/LongStrip.astro';
 						</h1>
 					</div>
 				</main>
-	
+
 				<LinkBar />
 			</div>
 		</div>
-	</div>
+  </div>
 </Layout>
 
 <style>
-	body {
-		background: linear-gradient(0deg, #56ff00, #fffbeb 200px);
+  body {
+    background: linear-gradient(0deg, #56ff00, #fffbeb 200px);
+		width: 100%;
+		height: 100%;
+  }
+	.height-fix {
+		position: fixed;
+		inset: 0;
+		height: 100%;
 	}
-	.styled-text {
-		display: inline-block;
-		background-color: #56ff00;
-		border-color: #56ff00;
-		transition: all ease-in-out 300ms;
+	.height-fix-inner {
+		height: 100%;
+		width: 100vw;
 	}
-	.styled-text:hover {
-		transform: skew(-8deg, 0deg);
-		border-color: #000;
-		box-shadow: 3px 3px #000;
-	}
+  .styled-text {
+    display: inline-block;
+    background-color: #56ff00;
+    border-color: #56ff00;
+    transition: all ease-in-out 300ms;
+  }
+  .styled-text:hover {
+    transform: skew(-8deg, 0deg);
+    border-color: #000;
+    box-shadow: 3px 3px #000;
+  }
 </style>
+
+<script>
+  console.log(123)
+</script>
