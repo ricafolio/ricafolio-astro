@@ -8,7 +8,7 @@ Hello friend, thanks for stopping by! 🌈
 
 ## Preview
 
-![Preview screenshot](https://i.imgur.com/UpifiHx.png)
+![Preview screenshot](https://i.imgur.com/8RZGTJk.png)
 
 ## Old Version
 Old version of my portfolio is also available here: [old.ricafolio.me](https://old.ricafolio.me)
