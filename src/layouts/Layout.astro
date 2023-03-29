@@ -36,7 +36,6 @@ const fontshareUrl = "https://api.fontshare.com"
 	</head>
 	<body >
 		<slot />
-		<div id="tsparticles"></div>
 		<script type="text/javascript">
 			console.log(`
 				┏━━━┓╋╋╋╋╋╋╋┏━┓╋╋┏┓
@@ -49,24 +48,6 @@ const fontshareUrl = "https://api.fontshare.com"
 		</script>
 	</body>
 </html>
-
-<script is:inline src="https://cdn.jsdelivr.net/npm/tsparticles@2.8.0/tsparticles.bundle.min.js"></script>
-<script is:inline src="https://cdn.jsdelivr.net/npm/tsparticles-preset-firefly@2/tsparticles.preset.firefly.bundle.min.js"></script>
-
-<script>
-(async () => {
-  await loadFireflyPreset(tsParticles); // this is required only if you are not using the bundle script
-
-  await tsParticles.load("tsparticles", {
-    preset: "firefly",
-		particles: {
-			color: {
-				value: "#ff7d5e"
-			}
-		}
-  })
-})()
-</script>
 
 <style is:global>
 	::selection {
