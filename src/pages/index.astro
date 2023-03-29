@@ -8,11 +8,11 @@ import LongStrip from '../components/LongStrip.astro';
 <Layout doIndex={true}>
 	<div id="swup" class="container text-black">
 		<div class="flex">
-			<div class="w-1/12 bg-black">
+			<div class="w-1/12 sm:w-[2rem] bg-black	">
 				<LongStrip />
 			</div>
 
-			<div class="w-11/12 flex flex-col justify-between overflow-hidden">
+			<div class="w-11/12 sm:w-auto flex flex-col justify-between overflow-hidden">
 				<NavBar page="about" />
 	
 				<main class="container mx-auto flex flex-col justify-evenly overflow-hidden">
