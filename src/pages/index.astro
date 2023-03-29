@@ -11,7 +11,7 @@ import NavBar from '../components/NavBar.astro';
 		<main class="container mx-auto flex flex-col justify-evenly min-h-[77vh]">
 			<div class="w-5/6 sm:w-3/6 mx-auto flex flex-col justify-center align-center">
 				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold font-clash uppercase mb-2">
-					Hello! I'm <span class="styled-text"><span>Rica</span></span>,
+					Hello! I'm <span class="styled-text border-2 sm:border-3 px-1 sm:px-3">Rica</span>,
 					<span class="block">A web developer based in Philippines.</span>
 				</h1>
 			</div>
@@ -28,11 +28,12 @@ import NavBar from '../components/NavBar.astro';
 	.styled-text {
 		display: inline-block;
 		background-color: #56ff00;
-		/* transform: skew(-10deg, 0deg); */
-		padding: 0 8px 0 12px;
+		border-color: #56ff00;
+		transition: all ease-in-out 300ms;
 	}
-	.styled-text span {
-		display: inline-block;
-		/* transform: skew(-15deg, 0deg); */
+	.styled-text:hover {
+		transform: skew(-8deg, 0deg);
+		border-color: #000;
+		box-shadow: 3px 3px #000;
 	}
 </style>
