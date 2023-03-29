@@ -6,36 +6,33 @@ import LongStrip from '../components/LongStrip.astro';
 ---
 
 <Layout doIndex={true}>
-	<div id="swup" class="full-screen relative text-black">
-		<NavBar page="about" />
-		<LongStrip />
-
-		<main class="container mx-auto flex flex-col justify-evenly min-h-[77vh] overflow-hidden">
-			<div class="w-full sm:w-4/6 lg:w-3/6 pl-12 pr-3 sm:px-0 mx-auto flex flex-col justify-center align-center">
-				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold font-clash uppercase mb-2">
-					Hello! I'm <span class="styled-text border-2 sm:border-3 px-1 sm:px-3">Rica</span>,
-					<span class="block">A web developer based in Philippines.</span>
-				</h1>
+	<div id="swup" class="container text-black">
+		<div class="flex">
+			<div class="w-1/12 bg-black">
+				<LongStrip />
 			</div>
-		</main>
 
-		<LinkBar />
+			<div class="w-11/12 flex flex-col justify-between overflow-hidden">
+				<NavBar page="about" />
+	
+				<main class="container mx-auto flex flex-col justify-evenly overflow-hidden">
+					<div class="w-full sm:w-4/6 lg:w-3/6 pl-8 pr-3 sm:px-0 mx-auto flex flex-col justify-center align-center">
+						<h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold font-clash uppercase mb-2">
+							Hello! I'm <span class="styled-text border-2 sm:border-3 px-1 sm:px-3">Rica</span>,
+							<span class="block">A web developer based in Philippines.</span>
+						</h1>
+					</div>
+				</main>
+	
+				<LinkBar />
+			</div>
+		</div>
 	</div>
 </Layout>
 
 <style>
 	body {
 		background: linear-gradient(0deg, #56ff00, #fffbeb 200px);
-		min-height: 100vh;
-		overflow: hidden;
-	}
-	.full-screen {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-    position: absolute;
-		height: 100%;
-    width: 100%;
 	}
 	.styled-text {
 		display: inline-block;
