@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar.astro';
 ---
 
 <Layout doIndex={true}>
-	<div id="swup" class="transition-fade relative text-black">
+	<div id="swup" class="full-screen relative text-black">
 		<NavBar page="about" />
 
 		<main class="container mx-auto flex flex-col justify-evenly min-h-[77vh] overflow-hidden">
@@ -24,6 +24,16 @@ import NavBar from '../components/NavBar.astro';
 <style>
 	body {
 		background: linear-gradient(0deg, #56ff00, #fffbeb 200px);
+		min-height: 100vh;
+		overflow: hidden;
+	}
+	.full-screen {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+    position: absolute;
+		height: 100%;
+    width: 100%;
 	}
 	.styled-text {
 		display: inline-block;
