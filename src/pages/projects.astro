@@ -5,16 +5,16 @@ import Project from '../components/Project.astro';
 ---
 
 <Layout doIndex={false}>
-	<div class="text-white">
+	<div class="text-black">
     <NavBar page="projects" />
 
 		<main class="container mx-auto flex flex-col mt-16 px-4 md:px-12">
 			<div class="mx-auto flex flex-row flex-wrap align-center mb-8 md:mb-32">
-				<h1 class="w-full text-4xl font-semibold font-clash mb-6">Personal projects</h1>
+				<h1 class="w-full text-4xl font-semibold font-clash mb-6 uppercase">Personal projects</h1>
 
         <Project
           img_file_name="mml"
-          progress={{text: "[Pre-alpha] Full Stack Project", color: "text-orange-500"}}
+          progress={{text: "[Pre-alpha] Full Stack Project", color: "text-lime-600"}}
           title="MyManhwaList"
           description="Manhwa reading lists exchange community"
           tools={['Next.js', 'React', 'Strapi', 'Tailwind CSS']}
@@ -25,7 +25,7 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="orangey"
-          progress={{text: "Theme Design", color: "text-orange-500"}}
+          progress={{text: "Theme Design", color: "text-lime-600"}}
           title="Orangey"
           description="Warm dark theme for VSCode"
           tools={['Visual Studio Code API', 'Package']}
@@ -36,7 +36,7 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="cbtv"
-          progress={{text: "Front-end Project", color: "text-orange-500"}}
+          progress={{text: "Front-end Project", color: "text-lime-600"}}
           title="CSS Box Transform Visualizer"
           description="Simple playground to quickly generate code for CSS3 Transforms"
           tools={['React', 'SASS', 'Typescript', 'Vite']}
@@ -47,11 +47,11 @@ import Project from '../components/Project.astro';
 			</div>
 
       <div class="mx-auto flex flex-row flex-wrap align-center mb-8 md:mb-32">
-				<h2 class="w-full text-4xl font-semibold font-clash mb-6">Solo projects for clients</h2>
+				<h2 class="w-full text-4xl font-semibold font-clash mb-6 uppercase">Solo projects for clients</h2>
 
         <Project
           img_file_name="chef"
-          progress={{text: "Front-end Project", color: "text-orange-500"}}
+          progress={{text: "Front-end Project", color: "text-lime-600"}}
           title="Chef"
           description="Responsive landing page for a chrome extension"
           tools={['HTML', 'CSS', 'jQuery', 'Jekyll']}
@@ -62,7 +62,7 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="wenmint"
-          progress={{text: "[Offline] Full Stack Project", color: "text-red-500"}}
+          progress={{text: "[Offline] Full Stack Project", color: "text-red-600"}}
           title="Wenmint.io"
           description="A community to keep track of upcoming NFT launch dates"
           tools={['Nuxt.js', 'Vue.js', 'Strapi', 'Discord API', 'Twitter API', 'SEO']}
@@ -73,7 +73,7 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="bot"
-          progress={{text: "[Offline] Bot Project", color: "text-red-500"}}
+          progress={{text: "[Offline] Bot Project", color: "text-red-600"}}
           title="Premint Links Discord Bot"
           description="A bot used by over 300 discord servers that extracts the most recent premint links shared on Twitter."
           tools={['Discord.js', 'Node.js', 'Twitter API']}
@@ -84,7 +84,7 @@ import Project from '../components/Project.astro';
 
         <Project
           img_file_name="cult"
-          progress={{text: "[Offline] Full Stack Project", color: "text-red-500"}}
+          progress={{text: "[Offline] Full Stack Project", color: "text-red-600"}}
           title="NFT Referral"
           description="An alt-resistant referral campaign implemented for an NFT project, attracting 23,000 registrations in just three days."
           tools={['Nuxt.js', 'Strapi', 'Twitter OAuth']}
@@ -96,3 +96,9 @@ import Project from '../components/Project.astro';
 		</main>
   </div>
 </Layout>
+
+<style>
+	body {
+		background-color: #fffbeb;
+	}
+</style>
