@@ -1,7 +1,6 @@
 ---
-import { Tooltips } from 'astro-tooltips';
-
-const { doIndex } = Astro.props;
+import { Tooltips } from 'astro-tooltips'
+const { doIndex } = Astro.props
 const title = "Ricafolio"
 const pageTitle = "ricafolio / web developer"
 const description = "Hi! 👋 I'm Rica, a web designer & developer from Philippines. Passionate about creating visually stunning and user-friendly websites."
@@ -55,7 +54,7 @@ const fontshareUrl = "https://api.fontshare.com"
 
 <script>
 (async () => {
-  await loadFireflyPreset(tsParticles); // this is required only if you are not using the bundle script
+  await loadFireflyPreset(tsParticles) // this is required only if you are not using the bundle script
 
   await tsParticles.load("tsparticles", {
     preset: "firefly",
