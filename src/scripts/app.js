@@ -27,4 +27,11 @@ const swup = new Swup({
   plugins: [new SwupA11yPlugin(), new SwupHeadPlugin(), new SwupSlideTheme()]
 })
 
+// run once when page loads
+if (document.readyState === 'complete') {
+  initIndexEffect();
+} else {
+  document.addEventListener('DOMContentLoaded', () => initIndexEffect());
+}
+
 swup.on('contentReplaced', initIndexEffect)
