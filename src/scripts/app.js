@@ -3,10 +3,10 @@ import SwupA11yPlugin from "@swup/a11y-plugin"
 import SwupHeadPlugin from "@swup/head-plugin"
 import SwupSlideTheme from "@swup/slide-theme"
 
-function initIndexEffect() {
+function initIndexScript() {
 	if (window.location.pathname === '/') {
 		const rica = document.getElementById("rica")
-		const ph = document.getElementById("ph")
+		const philippines = document.getElementById("ph")
 		const emoji = document.getElementById("emoji")
 		const setEmoji = (emojicon) => {
 			emoji.innerHTML = emojicon
@@ -18,8 +18,8 @@ function initIndexEffect() {
 		rica.addEventListener("mouseenter", () => {setEmoji("🤠")}, false)
 		rica.addEventListener("mouseleave", resetEmoji, false)
 
-		ph.addEventListener("mouseenter", () => {setEmoji("🇵🇭")}, false)	
-		ph.addEventListener("mouseleave", resetEmoji, false)
+		philippines.addEventListener("mouseenter", () => {setEmoji("🇵🇭")}, false)	
+		philippines.addEventListener("mouseleave", resetEmoji, false)
 	}
 }
 
@@ -29,9 +29,10 @@ const swup = new Swup({
 
 // run once when page loads
 if (document.readyState === 'complete') {
-  initIndexEffect();
+  initIndexScript();
 } else {
-  document.addEventListener('DOMContentLoaded', () => initIndexEffect());
+  document.addEventListener('DOMContentLoaded', () => initIndexScript());
 }
 
-swup.on('contentReplaced', initIndexEffect)
+// run every page transition
+swup.on('contentReplaced', initIndexScript)
