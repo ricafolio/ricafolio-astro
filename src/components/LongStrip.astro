@@ -3,7 +3,7 @@ const { amount } = Astro.props
 ---
 
 <div class="long-strip bg-black text-white overflow-hidden flex flex-col items-center justify-center">
-  <div class="long-strip-ticker">
+  <div class="relative flex flex-col items-center">
     {
       [...Array(amount)].map((i) => (
         <div class="afw inline-block uppercase font-semibold mb-2">
@@ -15,14 +15,7 @@ const { amount } = Astro.props
 </div>
 
 <style>
-  .long-strip {
-    overflow: hidden;
-  }
-  .long-strip-ticker {
-    position: relative;
-  }
   .afw {
-    display: block;
     writing-mode: vertical-rl;
     text-orientation: mixed;
   }
