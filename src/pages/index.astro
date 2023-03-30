@@ -68,21 +68,3 @@ import LongStrip from "../components/LongStrip.astro"
 		transform: skew(-8deg, 0deg);
 	}
 </style>
-
-<script>
-  const rica = document.getElementById("rica")!
-  const ph = document.getElementById("ph")!
-  const emoji = document.getElementById("emoji")!
-	const setEmoji = (emojicon: string) => {
-		emoji.innerHTML = emojicon
-	}
-	const resetEmoji = () => {
-		emoji.innerHTML = "👋"
-	}
-
-	rica.addEventListener("mouseenter", () => {setEmoji("🤠")}, false)
-	rica.addEventListener("mouseleave", resetEmoji, false)
-
-	ph.addEventListener("mouseenter", () => {setEmoji("🇵🇭")}, false)	
-	ph.addEventListener("mouseleave", resetEmoji, false)
-</script>
