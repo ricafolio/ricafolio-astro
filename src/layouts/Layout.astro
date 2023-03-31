@@ -12,7 +12,7 @@ const fontshareUrl = "https://api.fontshare.com"
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		{doIndex && <meta name="robots" content="noindex">}
+		{!doIndex && <meta name="robots" content="noindex">}
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="theme-color" content="#000" />
