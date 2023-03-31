@@ -20,7 +20,7 @@ import StrapiIcon from "./icons/tech/StrapiIcon.astro"
 import NPMIcon from "./icons/tech/NPMIcon.astro"
 import SEOIcon from "./icons/tech/SEOIcon.astro"
 
-const { img_file_name, progress, title, description, tools, url, url_text, github_url } = Astro.props
+const { lazy = true, img_file_name, progress, title, description, tools, url, url_text, github_url } = Astro.props
 ---
 <section class="w-full md:w-6/12 mb-12 md:mb-6">
   <div class="bg-card drop-shadow-[5px_5px_#000] border-2 border-zinc-900 transition-colors p-5 md:mr-4 rounded-md">
@@ -28,7 +28,7 @@ const { img_file_name, progress, title, description, tools, url, url_text, githu
       <picture>
         <source type="image/webp" srcset={`/img/${img_file_name}.webp`} class="rounded-md">
         <source type="image/png" srcset={`/img/${img_file_name}.png`} class="rounded-md">
-        <img src={`/img/${img_file_name}.png`} alt={title} loading="lazy" width="564" height="288" class="rounded-md">
+        <img src={`/img/${img_file_name}.png`} alt={title} loading={lazy ? "lazy" : null} width="564" height="288" class="rounded-md">
       </picture>
     </div>
 
