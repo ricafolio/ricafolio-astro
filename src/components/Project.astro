@@ -26,11 +26,11 @@ const { lazy = true, img_file_name, progress, title, description, tools, url, ur
 ---
 <section class="w-full md:w-6/12 mb-12 md:mb-6">
   <div class="bg-card drop-shadow-[5px_5px_#000] border-2 border-zinc-900 transition-colors p-5 md:mr-4 rounded-md">
-    <div class="mb-5">
+    <div class="mb-5 bg-[#ececcf] rounded-md">
       <picture>
         <source type="image/webp" srcset={`/img/${img_file_name}.webp`} class="rounded-md">
         <source type="image/png" srcset={`/img/${img_file_name}.png`} class="rounded-md">
-        <img src={`/img/${img_file_name}.png`} alt={title} loading={lazy ? "lazy" : null} width="564" height="288" class="rounded-md">
+        <img src={`/img/${img_file_name}.png`} alt={title} loading={lazy ? "lazy" : null} width="564" height="288" class="rounded-md mx-auto">
       </picture>
     </div>
 
