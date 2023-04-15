@@ -2,8 +2,6 @@
 import Layout from '../layouts/Layout.astro'
 import NavBar from '../components/NavBar.astro'
 import Project from '../components/Project.astro'
-
-import ReactIcon from '../components/icons/tech/ReactIcon.astro'
 ---
 
 <Layout 
@@ -19,6 +17,7 @@ import ReactIcon from '../components/icons/tech/ReactIcon.astro'
 				<h1 class="w-full text-3xl sm:text-4xl font-semibold font-clash mb-6 uppercase">Personal projects</h1>
 
         <Project
+          lazy={false}
           img_file_name="mml"
           progress={{text: "[Pre-alpha] Full Stack Project", color: "text-lime-600"}}
           title="MyManhwaList"
@@ -32,6 +31,22 @@ import ReactIcon from '../components/icons/tech/ReactIcon.astro'
           url="https://mymanhwalist-next.vercel.app"
           url_text="View project"
           github_url={null}
+        />
+
+        <Project
+          lazy={false}
+          img_file_name="destinasyon"
+          progress={{text: "[PRE-ALPHA] Front-end Project", color: "text-lime-600"}}
+          title="Destinasyon"
+          description="Tool to discover the best travel destinations in the Philippines."
+          tools={[
+            {id: 'next', name: 'Next.js'},
+            {id: 'openaiapi', name: 'OpenAI API'},
+            {id: 'googleapi', name: 'Google Places API'},
+          ]}
+          url=""
+          url_text="View Project"
+          github_url="https://github.com/ricafolio/destinasyon-app"
         />
 
         <Project
