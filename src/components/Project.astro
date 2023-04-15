@@ -19,6 +19,7 @@ import NodeIcon from "./icons/tech/NodeIcon.astro"
 import StrapiIcon from "./icons/tech/StrapiIcon.astro"
 import NPMIcon from "./icons/tech/NPMIcon.astro"
 import SEOIcon from "./icons/tech/SEOIcon.astro"
+import OpenAIIcon from "./icons/tech/OpenAIIcon.astro"
 
 const { lazy = true, img_file_name, progress, title, description, tools, url, url_text, github_url } = Astro.props
 ---
@@ -63,6 +64,7 @@ const { lazy = true, img_file_name, progress, title, description, tools, url, ur
                   (tool.id === 'node') ? <NodeIcon /> :
                   (tool.id === 'package') ? <NPMIcon /> :
                   (tool.id === 'seo') ? <SEOIcon /> :
+                  (tool.id === 'openaiapi') ? <OpenAIIcon /> :
                   null
                 }
               </span>
