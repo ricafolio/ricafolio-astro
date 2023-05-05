@@ -64,6 +64,20 @@ import Project from '../components/Project.astro'
         />
 
         <Project
+          img_file_name="hcs"
+          progress={{text: "Extension Project", color: "text-lime-600"}}
+          title="Hide ChatGPT Sidebar"
+          description="A lightweight browser extension to hide ChatGPT's sidebar."
+          tools={[
+            {id: 'chromeapi', name: 'Chrome Extension API'},
+            {id: 'javascript', name: 'Javascript'}
+          ]}
+          url="https://chrome.google.com/webstore/detail/pgpgbilginopbmeoccggifljlmgehpek/"
+          url_text="Download extension"
+          github_url="https://github.com/ricafolio/hide-chatgpt-sidebar"
+        />
+
+        <Project
           img_file_name="cbtv"
           progress={{text: "Front-end Project", color: "text-lime-600"}}
           title="CSS Box Transform Visualizer"
