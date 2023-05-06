@@ -18,23 +18,6 @@ import Project from '../components/Project.astro'
 
         <Project
           lazy={false}
-          img_file_name="mml"
-          label={{text: "[OFFLINE] Full Stack Project", color: "text-red-600"}}
-          title="MyManhwaList"
-          description="Manhwa reading lists exchange community"
-          tools={[
-            {id: 'next', name: 'Next.js'},
-            {id: 'react', name: 'React'},
-            {id: 'strapi', name: 'Strapi'},
-            {id: 'tailwind', name: 'Tailwind CSS'}
-          ]}
-          url="https://mymanhwalist-next.vercel.app"
-          url_text="View project"
-          github_url={null}
-        />
-
-        <Project
-          lazy={false}
           img_file_name="destinasyon"
           label={{text: "Full stack Project", color: "text-lime-600"}}
           title="Destinasyon"
@@ -91,6 +74,23 @@ import Project from '../components/Project.astro'
           url="https://box-transform-visualizer.vercel.app/"
           url_text="View project"
           github_url="https://github.com/ricafolio/box-transform-visualizer"
+        />
+
+        <Project
+          lazy={false}
+          img_file_name="mml"
+          label={{text: "[OFFLINE/PRE-ALPHA] Full Stack Project", color: "text-red-600"}}
+          title="MyManhwaList"
+          description="Manhwa reading lists exchange community"
+          tools={[
+            {id: 'next', name: 'Next.js'},
+            {id: 'react', name: 'React'},
+            {id: 'strapi', name: 'Strapi'},
+            {id: 'tailwind', name: 'Tailwind CSS'}
+          ]}
+          url="https://mymanhwalist-next.vercel.app"
+          url_text="View project"
+          github_url={null}
         />
 			</div>
 
