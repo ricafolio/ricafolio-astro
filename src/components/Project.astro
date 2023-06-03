@@ -23,6 +23,7 @@ import OpenAIIcon from "./icons/tech/OpenAIIcon.astro"
 import GooglePlacesIcon from "./icons/tech/GooglePlacesIcon.astro"
 import ChromeIcon from "./icons/tech/ChromeIcon.astro"
 import JavascriptIcon from "./icons/tech/JavascriptIcon.astro"
+import FabricIcon from "./icons/tech/FabricIcon.astro"
 
 const { lazy = true, img_file_name, label, title, description, tools, url, url_text, github_url } = Astro.props
 ---
@@ -71,6 +72,7 @@ const { lazy = true, img_file_name, label, title, description, tools, url, url_t
                   (tool.id === 'googleapi') ? <GooglePlacesIcon /> :
                   (tool.id === 'chromeapi') ? <ChromeIcon /> :
                   (tool.id === 'javascript') ? <JavascriptIcon /> :
+                  (tool.id === 'fabric') ? <FabricIcon /> :
                   null
                 }
               </span>
