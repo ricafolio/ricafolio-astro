@@ -18,27 +18,26 @@ import Project from '../components/Project.astro'
 
         <Project
           lazy={false}
-          img_file_name="mml"
-          progress={{text: "[Pre-alpha] Full Stack Project", color: "text-lime-600"}}
-          title="MyManhwaList"
-          description="Manhwa reading lists exchange community"
+          img_file_name="collage"
+          label={{text: "Front-end Project", color: "text-lime-600"}}
+          title="Collage Canvas"
+          description="Image collage maker with customizable filter options"
           tools={[
-            {id: 'next', name: 'Next.js'},
             {id: 'react', name: 'React'},
-            {id: 'strapi', name: 'Strapi'},
-            {id: 'tailwind', name: 'Tailwind CSS'}
+            {id: 'fabric', name: 'Fabric.js'},
+            {id: 'html', name: 'HTML5 Canvas'},
           ]}
-          url="https://mymanhwalist-next.vercel.app"
-          url_text="View project"
-          github_url={null}
+          url="https://collage-canvas.vercel.app/"
+          url_text="View Project"
+          github_url="https://github.com/ricafolio/react-canvas-collage-maker"
         />
 
         <Project
           lazy={false}
           img_file_name="destinasyon"
-          progress={{text: "[PRE-ALPHA] Front-end Project", color: "text-lime-600"}}
+          label={{text: "Full stack Project", color: "text-lime-600"}}
           title="Destinasyon"
-          description="Tool to discover the best travel destinations in the Philippines."
+          description="AI tool to discover the best travel destinations in the Philippines"
           tools={[
             {id: 'next', name: 'Next.js'},
             {id: 'openaiapi', name: 'OpenAI API'},
@@ -51,7 +50,7 @@ import Project from '../components/Project.astro'
 
         <Project
           img_file_name="orangey"
-          progress={{text: "Theme Design", color: "text-lime-600"}}
+          label={{text: "Extension Project", color: "text-lime-600"}}
           title="Orangey"
           description="Warm dark theme for VSCode"
           tools={[
@@ -64,8 +63,22 @@ import Project from '../components/Project.astro'
         />
 
         <Project
+          img_file_name="hcs"
+          label={{text: "Extension Project", color: "text-lime-600"}}
+          title="Hide ChatGPT Sidebar"
+          description="A lightweight browser extension to hide ChatGPT's sidebar"
+          tools={[
+            {id: 'chromeapi', name: 'Chrome Extension API'},
+            {id: 'javascript', name: 'Javascript'}
+          ]}
+          url="https://chrome.google.com/webstore/detail/pgpgbilginopbmeoccggifljlmgehpek/"
+          url_text="Download extension"
+          github_url="https://github.com/ricafolio/hide-chatgpt-sidebar"
+        />
+
+        <Project
           img_file_name="cbtv"
-          progress={{text: "Front-end Project", color: "text-lime-600"}}
+          label={{text: "Front-end Project", color: "text-lime-600"}}
           title="CSS Box Transform Visualizer"
           description="Simple playground to quickly generate code for CSS3 Transforms"
           tools={[
@@ -78,6 +91,22 @@ import Project from '../components/Project.astro'
           url_text="View project"
           github_url="https://github.com/ricafolio/box-transform-visualizer"
         />
+
+        <Project
+          img_file_name="mml"
+          label={{text: "[IN PROGRESS] Full Stack Project", color: "text-orange-500"}}
+          title="MyManhwaList"
+          description="Manhwa reading lists exchange community"
+          tools={[
+            {id: 'next', name: 'Next.js'},
+            {id: 'react', name: 'React'},
+            {id: 'strapi', name: 'Strapi'},
+            {id: 'tailwind', name: 'Tailwind CSS'}
+          ]}
+          url="https://mymanhwalist-next.vercel.app"
+          url_text="View project"
+          github_url={null}
+        />
 			</div>
 
       <div class="mx-auto flex flex-row flex-wrap align-center mb-8 md:mb-32">
@@ -85,7 +114,7 @@ import Project from '../components/Project.astro'
 
         <Project
           img_file_name="chef"
-          progress={{text: "Front-end Project", color: "text-lime-600"}}
+          label={{text: "Front-end Project", color: "text-lime-600"}}
           title="Chef"
           description="Responsive landing page for a chrome extension"
           tools={[
@@ -101,7 +130,7 @@ import Project from '../components/Project.astro'
 
         <Project
           img_file_name="wenmint"
-          progress={{text: "[Offline] Full Stack Project", color: "text-red-600"}}
+          label={{text: "[Offline] Full Stack Project", color: "text-red-600"}}
           title="Wenmint.io"
           description="A community to keep track of upcoming NFT launch dates"
           tools={[
@@ -117,7 +146,7 @@ import Project from '../components/Project.astro'
 
         <Project
           img_file_name="bot"
-          progress={{text: "[Offline] Bot Project", color: "text-red-600"}}
+          label={{text: "[Offline] Bot Project", color: "text-red-600"}}
           title="Premint Links Discord Bot"
           description="A bot used by over 300 discord servers that extracts the most recent premint links shared on Twitter."
           tools={[
@@ -132,7 +161,7 @@ import Project from '../components/Project.astro'
 
         <Project
           img_file_name="cult"
-          progress={{text: "[Offline] Full Stack Project", color: "text-red-600"}}
+          label={{text: "[Offline] Full Stack Project", color: "text-red-600"}}
           title="NFT Referral"
           description="An alt-resistant referral campaign implemented for an NFT project, attracting 23,000 registrations in just three days."
           tools={[
