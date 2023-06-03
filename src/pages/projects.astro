@@ -18,10 +18,26 @@ import Project from '../components/Project.astro'
 
         <Project
           lazy={false}
+          img_file_name="collage"
+          label={{text: "Front-end Project", color: "text-lime-600"}}
+          title="Collage Canvas"
+          description="Image collage maker with customizable filter options"
+          tools={[
+            {id: 'react', name: 'React'},
+            {id: 'fabric', name: 'Fabric.js'},
+            {id: 'html', name: 'HTML5 Canvas'},
+          ]}
+          url="https://collage-canvas.vercel.app/"
+          url_text="View Project"
+          github_url="https://github.com/ricafolio/react-canvas-collage-maker"
+        />
+
+        <Project
+          lazy={false}
           img_file_name="destinasyon"
           label={{text: "Full stack Project", color: "text-lime-600"}}
           title="Destinasyon"
-          description="Tool to discover the best travel destinations in the Philippines."
+          description="AI tool to discover the best travel destinations in the Philippines"
           tools={[
             {id: 'next', name: 'Next.js'},
             {id: 'openaiapi', name: 'OpenAI API'},
