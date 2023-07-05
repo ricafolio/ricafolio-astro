@@ -1,0 +1,54 @@
+---
+import ReactIcon from "../icons/tech/ReactIcon.astro"
+import NextIcon from "../icons/tech/NextIcon.astro"
+import TailwindIcon from "../icons/tech/TailwindIcon.astro"
+import VSCodeIcon from "../icons/tech/VSCodeIcon.astro"
+import SassIcon from "../icons/tech/SassIcon.astro"
+import TypescriptIcon from "../icons/tech/TypescriptIcon.astro"
+import ViteIcon from "../icons/tech/ViteIcon.astro"
+import HTMLIcon from "../icons/tech/HTMLIcon.astro"
+import CSSIcon from "../icons/tech/CSSIcon.astro"
+import JqueryIcon from "../icons/tech/JqueryIcon.astro"
+import JekyllIcon from "../icons/tech/JekyllIcon.astro"
+import NuxtIcon from "../icons/tech/NuxtIcon.astro"
+import DiscordAPIIcon from "../icons/tech/DiscordAPIIcon.astro"
+import TwitterAPIIcon from "../icons/tech/TwitterAPIIcon.astro"
+import NodeIcon from "../icons/tech/NodeIcon.astro"
+import StrapiIcon from "../icons/tech/StrapiIcon.astro"
+import NPMIcon from "../icons/tech/NPMIcon.astro"
+import SEOIcon from "../icons/tech/SEOIcon.astro"
+import OpenAIIcon from "../icons/tech/OpenAIIcon.astro"
+import GooglePlacesIcon from "../icons/tech/GooglePlacesIcon.astro"
+import ChromeIcon from "../icons/tech/ChromeIcon.astro"
+import JavascriptIcon from "../icons/tech/JavascriptIcon.astro"
+import FabricIcon from "../icons/tech/FabricIcon.astro"
+
+const { tool_id } = Astro.props
+---
+
+{
+  tool_id === "react" ? <ReactIcon /> : 
+  tool_id === "next" ? <NextIcon /> : 
+  tool_id === "strapi" ? <StrapiIcon /> : 
+  tool_id === "tailwind" ? <TailwindIcon /> : 
+  tool_id === "vscode" ? <VSCodeIcon /> : 
+  tool_id === "sass" ? <SassIcon /> : 
+  tool_id === "typescript" ? <TypescriptIcon /> : 
+  tool_id === "vite" ? <ViteIcon /> : 
+  tool_id === "html" ? <HTMLIcon /> : 
+  tool_id === "css" ? <CSSIcon /> : 
+  tool_id === "jquery" ? <JqueryIcon /> : 
+  tool_id === "jekyll" ? <JekyllIcon /> : 
+  tool_id === "nuxt" ? <NuxtIcon /> : 
+  tool_id === "discordapi" ? <DiscordAPIIcon /> : 
+  tool_id === "twitterapi" ? <TwitterAPIIcon /> : 
+  tool_id === "node" ? <NodeIcon /> : 
+  tool_id === "package" ? <NPMIcon /> : 
+  tool_id === "seo" ? <SEOIcon /> : 
+  tool_id === "openaiapi" ? <OpenAIIcon /> : 
+  tool_id === "googleapi" ? <GooglePlacesIcon /> : 
+  tool_id === "chromeapi" ? <ChromeIcon /> : 
+  tool_id === "javascript" ? <JavascriptIcon /> : 
+  tool_id === "fabric" ? <FabricIcon /> : 
+  null
+}
