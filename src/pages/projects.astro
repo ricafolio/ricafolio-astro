@@ -12,9 +12,22 @@ import Project from "../components/project/Project.astro"
 	<div id="swup" class="transition-fade text-black">
     <NavBar page="projects" />
 
-		<main class="container mx-auto flex flex-col mt-16 px-4 md:px-12">
-			<div class="mx-auto flex flex-row flex-wrap align-center mb-8 md:mb-32">
-				<h1 class="w-full text-3xl sm:text-4xl font-semibold font-clash mb-6 uppercase">Personal projects</h1>
+		<main class:list={[
+      "container flex flex-col",
+      "mx-auto mt-16",
+      "px-4 md:px-12"
+    ]}>
+			<div class:list={[
+        "flex flex-row flex-wrap align-center",
+        "mx-auto mb-8 md:mb-32"
+      ]}>
+				<h1 class:list={[
+          "w-full mb-6",
+          "font-semibold font-clash uppercase",
+          "text-3xl sm:text-4xl"
+        ]}>
+          Personal projects
+        </h1>
 
         <Project
           lazy={false}

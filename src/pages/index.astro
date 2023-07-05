@@ -8,19 +8,39 @@ import LongStrip from "../components/LongStrip.astro"
 <Layout doIndex={true}>
   <div id="swup" class="container height-fix text-black">
 		<div class="height-fix-inner flex">
-			<div class="hidden sm:block sm:w-[2rem] sm:flex-none bg-black">
+			<div class:list={[
+				"hidden bg-black",
+				"sm:block sm:w-[2rem] sm:flex-none"
+			]}>
 				<LongStrip amount={5} />
 			</div>
 
-			<div class="w-full sm:flex-1 flex flex-col justify-between overflow-hidden">
+			<div class:list={[
+				"w-full overflow-hidden",
+				"flex flex-col justify-between",
+				"sm:flex-1"
+			]}>
 				<NavBar page="about" />
 
 				<main class="container mx-auto flex flex-col justify-evenly overflow-hidden">
-					<div class="w-full sm:w-4/6 lg:w-3/6 pl-8 pr-3 sm:px-0 mx-auto flex flex-col justify-center align-center">
-						<span id="emoji" class="block text-4xl sm:text-5xl lg:text-6xl mb-4">
+					<div class:list={[
+						"flex flex-col justify-center align-center",
+						"w-full pl-8 pr-3 mx-auto",
+						"sm:w-4/6 sm:px-0",
+						"lg:w-3/6",
+					]}>
+						<span id="emoji" class:list={[
+							"text-4xl block mb-4",
+							"lg:text-6xl",
+							"sm:text-5xl"
+						]}>
 							👋
 						</span>
-						<h1 class="select-none text-4xl sm:text-5xl lg:text-6xl font-semibold font-clash uppercase mb-2">
+						<h1 class:list={[
+							"select-none mb-2",
+							"text-4xl font-semibold font-clash uppercase",
+							"sm:text-5xl lg:text-6xl"
+						]}>
 							Hello! I'm <span id="rica" class="styled-text border-2 sm:border-3 px-1 sm:px-3">Rica</span>,
 							<span class="block">A web developer based in <span id="ph" class="ph-text">Philippines</span>.</span>
 						</h1>
