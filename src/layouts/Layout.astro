@@ -1,9 +1,15 @@
 ---
+interface Props {
+	title?: string
+	description?: string
+	doIndex: boolean
+}
 const { 
 	title = "ricafolio · web developer", 
 	description = "Hi! 👋 I'm Rica, a web designer & developer from Philippines. Passionate about creating visually stunning and user-friendly websites.",
 	doIndex 
 } = Astro.props
+
 const url = "https://ricafolio.me"
 const fontshareUrl = "https://api.fontshare.com"
 ---
