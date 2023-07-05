@@ -1,7 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import NavBar from '../components/NavBar.astro'
-import Project from '../components/Project.astro'
+import Layout from "../layouts/Layout.astro"
+import NavBar from "../components/NavBar.astro"
+import Project from "../components/project/Project.astro"
+
+import client_projects from "../constants/client_projects.json"
+import personal_projects from "../constants/personal_projects.json"
 ---
 
 <Layout 
@@ -12,167 +15,56 @@ import Project from '../components/Project.astro'
 	<div id="swup" class="transition-fade text-black">
     <NavBar page="projects" />
 
-		<main class="container mx-auto flex flex-col mt-16 px-4 md:px-12">
-			<div class="mx-auto flex flex-row flex-wrap align-center mb-8 md:mb-32">
-				<h1 class="w-full text-3xl sm:text-4xl font-semibold font-clash mb-6 uppercase">Personal projects</h1>
+		<main class:list={[
+      "container flex flex-col",
+      "mx-auto mt-16",
+      "px-4 md:px-12"
+    ]}>
+			<div class:list={[
+        "flex flex-row flex-wrap align-center",
+        "mx-auto mb-8 md:mb-32"
+      ]}>
+				<h1 class="w-full mb-6 font-semibold font-clash uppercase text-3xl sm:text-4xl">
+          Personal projects
+        </h1>
 
-        <Project
-          lazy={false}
-          img_file_name="collage"
-          label={{text: "Front-end Project", color: "text-lime-600"}}
-          title="Collage Canvas"
-          description="Image collage maker with customizable filter options"
-          tools={[
-            {id: 'react', name: 'React'},
-            {id: 'fabric', name: 'Fabric.js'},
-            {id: 'html', name: 'HTML5 Canvas'},
-          ]}
-          url="https://collage-canvas.vercel.app/"
-          url_text="View Project"
-          github_url="https://github.com/ricafolio/react-canvas-collage-maker"
-        />
-
-        <Project
-          lazy={false}
-          img_file_name="destinasyon"
-          label={{text: "Full stack Project", color: "text-lime-600"}}
-          title="Destinasyon"
-          description="AI tool to discover the best travel destinations in the Philippines"
-          tools={[
-            {id: 'next', name: 'Next.js'},
-            {id: 'openaiapi', name: 'OpenAI API'},
-            {id: 'googleapi', name: 'Google Places API'},
-          ]}
-          url="https://app.destinasyon.xyz/"
-          url_text="View Project"
-          github_url="https://github.com/ricafolio/destinasyon-app"
-        />
-
-        <Project
-          img_file_name="orangey"
-          label={{text: "Extension Project", color: "text-lime-600"}}
-          title="Orangey"
-          description="Warm dark theme for VSCode"
-          tools={[
-            {id: 'vscode', name: 'Visual Studio Code API'},
-            {id: 'package', name: 'Package'},
-          ]}
-          url="https://marketplace.visualstudio.com/items?itemName=ricafolio.orangey-vscode-theme"
-          url_text="Download extension"
-          github_url="https://github.com/ricafolio/orangey-vscode-theme"
-        />
-
-        <Project
-          img_file_name="hcs"
-          label={{text: "Extension Project", color: "text-lime-600"}}
-          title="Hide ChatGPT Sidebar"
-          description="A lightweight browser extension to hide ChatGPT's sidebar"
-          tools={[
-            {id: 'chromeapi', name: 'Chrome Extension API'},
-            {id: 'javascript', name: 'Javascript'}
-          ]}
-          url="https://chrome.google.com/webstore/detail/pgpgbilginopbmeoccggifljlmgehpek/"
-          url_text="Download extension"
-          github_url="https://github.com/ricafolio/hide-chatgpt-sidebar"
-        />
-
-        <Project
-          img_file_name="cbtv"
-          label={{text: "Front-end Project", color: "text-lime-600"}}
-          title="CSS Box Transform Visualizer"
-          description="Simple playground to quickly generate code for CSS3 Transforms"
-          tools={[
-            {id: 'react', name: 'React'},
-            {id: 'sass', name: 'SASS'},
-            {id: 'typescript', name: 'Typescript'},
-            {id: 'vite', name: 'Vite'}
-          ]}
-          url="https://box-transform-visualizer.vercel.app/"
-          url_text="View project"
-          github_url="https://github.com/ricafolio/box-transform-visualizer"
-        />
-
-        <Project
-          img_file_name="mml"
-          label={{text: "[IN PROGRESS] Full Stack Project", color: "text-orange-500"}}
-          title="MyManhwaList"
-          description="Manhwa reading lists exchange community"
-          tools={[
-            {id: 'next', name: 'Next.js'},
-            {id: 'react', name: 'React'},
-            {id: 'strapi', name: 'Strapi'},
-            {id: 'tailwind', name: 'Tailwind CSS'}
-          ]}
-          url="https://mymanhwalist-next.vercel.app"
-          url_text="View project"
-          github_url={null}
-        />
+        {personal_projects.map((project) => {
+          return (
+            <Project
+              lazy={project.lazy || true}
+              img_file_name={project.img_file_name}
+              label={project.label}
+              title={project.title}
+              description={project.description}
+              tools={project.tools}
+              url={project.url}
+              url_text={project.url_text}
+              github_url={project.github_url}
+            />
+          )
+        })}
 			</div>
 
       <div class="mx-auto flex flex-row flex-wrap align-center mb-8 md:mb-32">
-				<h2 class="w-full text-3xl sm:text-4xl font-semibold font-clash mb-6 uppercase">Solo projects for clients</h2>
+				<h2 class="w-full text-3xl sm:text-4xl font-semibold font-clash mb-6 uppercase">
+          Solo projects for clients
+        </h2>
 
-        <Project
-          img_file_name="chef"
-          label={{text: "Front-end Project", color: "text-lime-600"}}
-          title="Chef"
-          description="Responsive landing page for a chrome extension"
-          tools={[
-            {id: 'html', name: 'HTML'},
-            {id: 'css', name: 'CSS'},
-            {id: 'jquery', name: 'jQuery'},
-            {id: 'jekyll', name: 'jekyll'}
-          ]}
-          url="https://usechef.com/"
-          url_text="View project"
-          github_url={null}
-        />
-
-        <Project
-          img_file_name="wenmint"
-          label={{text: "[Offline] Full Stack Project", color: "text-red-600"}}
-          title="Wenmint.io"
-          description="A community to keep track of upcoming NFT launch dates"
-          tools={[
-            {id: 'nuxt', name: 'Nuxt.js'},
-            {id: 'discordapi', name: 'Discord API'},
-            {id: 'twitterapi', name: 'Twitter API'},
-            {id: 'seo', name: 'SEO'},
-          ]}
-          url="https://web.archive.org/web/20221207025634/https://wenmint.io/"
-          url_text="View archived page"
-          github_url={null}
-        />
-
-        <Project
-          img_file_name="bot"
-          label={{text: "[Offline] Bot Project", color: "text-red-600"}}
-          title="Premint Links Discord Bot"
-          description="A bot used by over 300 discord servers that extracts the most recent premint links shared on Twitter."
-          tools={[
-            {id: 'discordapi', name: 'Discord API'},
-            {id: 'twitterapi', name: 'Twitter API'},
-            {id: 'node', name: 'Node.js'},
-          ]}
-          url="https://top.gg/bot/1006311461175443526"
-          url_text="View archived page"
-          github_url={null}
-        />
-
-        <Project
-          img_file_name="cult"
-          label={{text: "[Offline] Full Stack Project", color: "text-red-600"}}
-          title="NFT Referral"
-          description="An alt-resistant referral campaign implemented for an NFT project, attracting 23,000 registrations in just three days."
-          tools={[
-            {id: 'nuxt', name: 'Nuxt.js'},
-            {id: 'strapi', name: 'Strapi'},
-            {id: 'twitterapi', name: 'Twitter OAuth'},
-          ]}
-          url="https://twitter.com/search?q=cultofeth.xyz&src=typed_query&f=live"
-          url_text="View campaign results"
-          github_url={null}
-        />
+        {client_projects.map((project) => {
+          return (
+            <Project
+              lazy={true}
+              img_file_name={project.img_file_name}
+              label={project.label}
+              title={project.title}
+              description={project.description}
+              tools={project.tools}
+              url={project.url}
+              url_text={project.url_text}
+              github_url={project.github_url}
+            />
+          )
+        })}
       </div>
 		</main>
   </div>

@@ -1,0 +1,65 @@
+---
+import ProjectImage from "./ProjectImage.astro"
+import ProjectInfo from "./ProjectInfo.astro"
+import ProjectLink from "./ProjectLink.astro"
+import ProjectTool from "./ProjectTool.astro"
+
+const { lazy = true, img_file_name, label, title, description, tools, url, url_text, github_url } = Astro.props
+---
+
+<section class="w-full md:w-6/12 mb-12 md:mb-6">
+  <div class:list={[
+    "bg-card drop-shadow-[5px_5px_#000] rounded-md",
+    "p-5 md:mr-4",
+    "border-2 border-zinc-900",
+    "transition-colors"
+  ]}>
+    <div class="mb-5 bg-[#ececcf] rounded-md">
+      <ProjectImage
+        img_file_name={img_file_name}
+        title={title}
+        lazy={lazy}
+      />
+    </div>
+
+    <div class="flex flex-col justify-center">
+      <ProjectInfo
+        label={label}
+        title={title}
+        description={description}
+      />
+
+      <div class="mt-1 mb-3">
+        {tools.map((tool: {id: String, name: String}, i: Number) => {
+          return (
+            <ProjectTool 
+              tool_index={i}
+              tool_id={tool.id}
+              tool_name={tool.name}
+              tools_length={tools.length}
+            />
+          )
+        })}
+      </div>
+
+      <div class="flex items-center">
+        <ProjectLink 
+          url={url} 
+          url_text={url_text} 
+          github_url={github_url}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bg-card {
+    background: linear-gradient(0deg, #56ff00, #fffbeb 5rem);
+    transition: all ease 300ms;
+  }
+  .bg-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px #000;
+  }
+</style>

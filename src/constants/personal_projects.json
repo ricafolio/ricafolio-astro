@@ -1,0 +1,138 @@
+[
+  {
+    "lazy": false,
+    "img_file_name": "collage",
+    "label": {
+      "text": "Front-end Project",
+      "color": "text-lime-600"
+    },
+    "title": "Collage Canvas",
+    "description": "Image collage maker with customizable filter options",
+    "tools": [
+      {"id": "react", "name": "React"},
+      {"id": "fabric", "name": "Fabric.js"},
+      {"id": "html", "name": "HTML5 Canvas"}
+    ],
+    "url": "https://collage-canvas.vercel.app/",
+    "url_text": "View Project",
+    "github_url": "https://github.com/ricafolio/react-canvas-collage-maker"
+  },
+  {
+    "lazy": false,
+    "img_file_name": "destinasyon",
+    "label": {
+      "text": "Full stack Project",
+      "color": "text-lime-600"
+    },
+    "title": "Destinasyon",
+    "description": "AI tool to discover the best travel destinations in the Philippines",
+    "tools": [
+      {"id": "next", "name": "Next.js"},
+      {"id": "openaiapi", "name": "OpenAI API"},
+      {"id": "googleapi", "name": "Google Places API"}
+    ],
+    "url": "https://app.destinasyon.xyz/",
+    "url_text": "View Project",
+    "github_url": "https://github.com/ricafolio/destinasyon-app"
+  },
+  {
+    "img_file_name": "orangey",
+    "label": {
+      "text": "Extension Project",
+      "color": "text-lime-600"
+    },
+    "title": "Orangey",
+    "description": "Warm dark theme for VSCode",
+    "tools": [
+      {
+        "id": "vscode",
+        "name": "Visual Studio Code API"
+      },
+      {
+        "id": "package",
+        "name": "Package"
+      }
+    ],
+    "url": "https://marketplace.visualstudio.com/items?itemName=ricafolio.orangey-vscode-theme",
+    "url_text": "Download extension",
+    "github_url": "https://github.com/ricafolio/orangey-vscode-theme"
+  },
+  {
+    "img_file_name": "mml",
+    "label": {
+      "text": "[IN PROGRESS] Full Stack Project",
+      "color": "text-orange-500"
+    },
+    "title": "MyManhwaList",
+    "description": "Manhwa reading lists exchange community",
+    "tools": [
+      {
+        "id": "next",
+        "name": "Next.js"
+      },
+      {
+        "id": "strapi",
+        "name": "Strapi"
+      },
+      {
+        "id": "tailwind",
+        "name": "Tailwind CSS"
+      }
+    ],
+    "url": "https://mymanhwalist-next.vercel.app",
+    "url_text": "View project",
+    "github_url": null
+  },
+  {
+    "img_file_name": "hcs",
+    "label": {
+      "text": "Extension Project",
+      "color": "text-lime-600"
+    },
+    "title": "Hide ChatGPT Sidebar",
+    "description": "A lightweight browser extension to hide ChatGPT's sidebar",
+    "tools": [
+      {
+        "id": "chromeapi",
+        "name": "Chrome Extension API"
+      },
+      {
+        "id": "javascript",
+        "name": "Javascript"
+      }
+    ],
+    "url": "https://chrome.google.com/webstore/detail/pgpgbilginopbmeoccggifljlmgehpek/",
+    "url_text": "Download extension",
+    "github_url": "https://github.com/ricafolio/hide-chatgpt-sidebar"
+  },
+  {
+    "img_file_name": "cbtv",
+    "label": {
+      "text": "Front-end Project",
+      "color": "text-lime-600"
+    },
+    "title": "CSS Box Transform Visualizer",
+    "description": "Simple playground to quickly generate code for CSS3 Transforms",
+    "tools": [
+      {
+        "id": "react",
+        "name": "React"
+      },
+      {
+        "id": "sass",
+        "name": "SASS"
+      },
+      {
+        "id": "typescript",
+        "name": "Typescript"
+      },
+      {
+        "id": "vite",
+        "name": "Vite"
+      }
+    ],
+    "url": "https://box-transform-visualizer.vercel.app/",
+    "url_text": "View project",
+    "github_url": "https://github.com/ricafolio/box-transform-visualizer"
+  }
+]

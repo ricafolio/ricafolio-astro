@@ -1,0 +1,17 @@
+---
+import ProjectToolIcon from "./ProjectToolIcon.astro"
+
+const { tool_id, tool_name, tool_index, tools_length } = Astro.props
+---
+
+<span class="inline-flex items-center select-none">
+  <span class="mt-1">
+    <ProjectToolIcon tool_id={tool_id} />
+  </span>
+  <span class="py-1 mt-1 ml-2 mr-1 text-zinc-800">
+    {tool_name}
+  </span>
+  {tool_index !== tools_length - 1 && (
+    <span class="text-gray-300 pl-2 pr-3">&middot;</span>
+  )}
+</span>

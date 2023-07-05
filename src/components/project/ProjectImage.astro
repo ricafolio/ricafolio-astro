@@ -1,0 +1,24 @@
+---
+const { img_file_name, title, lazy } = Astro.props
+---
+
+<picture>
+  <source 
+    type="image/webp" 
+    srcset={`/img/${img_file_name}.webp`} 
+    class="rounded-md"
+  />
+  <source 
+    type="image/png" 
+    srcset={`/img/${img_file_name}.png`} 
+    class="rounded-md"
+  />
+  <img 
+    src={`/img/${img_file_name}.png`} 
+    alt={title} 
+    loading={lazy ? "lazy" : null} 
+    width="564" 
+    height="288" 
+    class="rounded-md mx-auto"
+  />
+</picture>
