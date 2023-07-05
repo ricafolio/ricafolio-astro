@@ -1,29 +1,7 @@
 ---
+import Tool from "./Tool.astro";
 import ExternalIcon from "./icons/ExternalIcon.astro"
 import GithubIcon from "./icons/GithubIcon.astro"
-import ReactIcon from "./icons/tech/ReactIcon.astro"
-import NextIcon from "./icons/tech/NextIcon.astro"
-import TailwindIcon from "./icons/tech/TailwindIcon.astro"
-import VSCodeIcon from "./icons/tech/VSCodeIcon.astro"
-import SassIcon from "./icons/tech/SassIcon.astro"
-import TypescriptIcon from "./icons/tech/TypescriptIcon.astro"
-import ViteIcon from "./icons/tech/ViteIcon.astro"
-import HTMLIcon from "./icons/tech/HTMLIcon.astro"
-import CSSIcon from "./icons/tech/CSSIcon.astro"
-import JqueryIcon from "./icons/tech/JqueryIcon.astro"
-import JekyllIcon from "./icons/tech/JekyllIcon.astro"
-import NuxtIcon from "./icons/tech/NuxtIcon.astro"
-import DiscordAPIIcon from "./icons/tech/DiscordAPIIcon.astro"
-import TwitterAPIIcon from "./icons/tech/TwitterAPIIcon.astro"
-import NodeIcon from "./icons/tech/NodeIcon.astro"
-import StrapiIcon from "./icons/tech/StrapiIcon.astro"
-import NPMIcon from "./icons/tech/NPMIcon.astro"
-import SEOIcon from "./icons/tech/SEOIcon.astro"
-import OpenAIIcon from "./icons/tech/OpenAIIcon.astro"
-import GooglePlacesIcon from "./icons/tech/GooglePlacesIcon.astro"
-import ChromeIcon from "./icons/tech/ChromeIcon.astro"
-import JavascriptIcon from "./icons/tech/JavascriptIcon.astro"
-import FabricIcon from "./icons/tech/FabricIcon.astro"
 
 const { lazy = true, img_file_name, label, title, description, tools, url, url_text, github_url } = Astro.props
 ---
@@ -47,40 +25,12 @@ const { lazy = true, img_file_name, label, title, description, tools, url, url_t
       <div class="mt-1 mb-3">
         {tools.map((tool: {id: String, name: String}, i: Number) => {
           return (
-            <span class="inline-flex items-center select-none">
-              <span class="mt-1">
-                {
-                  (tool.id === 'react') ? <ReactIcon /> :
-                  (tool.id === 'next') ? <NextIcon /> :
-                  (tool.id === 'strapi') ? <StrapiIcon /> :
-                  (tool.id === 'tailwind') ? <TailwindIcon /> :
-                  (tool.id === 'vscode') ? <VSCodeIcon /> :
-                  (tool.id === 'sass') ? <SassIcon /> :
-                  (tool.id === 'typescript') ? <TypescriptIcon /> :
-                  (tool.id === 'vite') ? <ViteIcon /> :
-                  (tool.id === 'html') ? <HTMLIcon /> :
-                  (tool.id === 'css') ? <CSSIcon /> :
-                  (tool.id === 'jquery') ? <JqueryIcon /> :
-                  (tool.id === 'jekyll') ? <JekyllIcon /> :
-                  (tool.id === 'nuxt') ? <NuxtIcon /> :
-                  (tool.id === 'discordapi') ? <DiscordAPIIcon /> :
-                  (tool.id === 'twitterapi') ? <TwitterAPIIcon /> :
-                  (tool.id === 'node') ? <NodeIcon /> :
-                  (tool.id === 'package') ? <NPMIcon /> :
-                  (tool.id === 'seo') ? <SEOIcon /> :
-                  (tool.id === 'openaiapi') ? <OpenAIIcon /> :
-                  (tool.id === 'googleapi') ? <GooglePlacesIcon /> :
-                  (tool.id === 'chromeapi') ? <ChromeIcon /> :
-                  (tool.id === 'javascript') ? <JavascriptIcon /> :
-                  (tool.id === 'fabric') ? <FabricIcon /> :
-                  null
-                }
-              </span>
-              <span class="py-1 mt-1 ml-2 mr-1 text-zinc-800">
-                {tool.name}
-              </span>
-              {i !== (tools.length -1) && <span class="text-gray-300 pl-2 pr-3">&middot;</span>}
-            </span>
+            <Tool 
+              tool_index={i}
+              tool_id={tool.id}
+              tool_name={tool.name}
+              tools_length={tools.length}
+            />
           )
         })}
       </div>
