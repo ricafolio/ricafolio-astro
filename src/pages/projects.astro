@@ -24,11 +24,7 @@ import personal_projects from "../constants/personal_projects.json"
         "flex flex-row flex-wrap align-center",
         "mx-auto mb-8 md:mb-32"
       ]}>
-				<h1 class:list={[
-          "w-full mb-6",
-          "font-semibold font-clash uppercase",
-          "text-3xl sm:text-4xl"
-        ]}>
+				<h1 class="w-full mb-6 font-semibold font-clash uppercase text-3xl sm:text-4xl">
           Personal projects
         </h1>
 
@@ -50,8 +46,10 @@ import personal_projects from "../constants/personal_projects.json"
 			</div>
 
       <div class="mx-auto flex flex-row flex-wrap align-center mb-8 md:mb-32">
-				<h2 class="w-full text-3xl sm:text-4xl font-semibold font-clash mb-6 uppercase">Solo projects for clients</h2>
-        
+				<h2 class="w-full text-3xl sm:text-4xl font-semibold font-clash mb-6 uppercase">
+          Solo projects for clients
+        </h2>
+
         {client_projects.map((project) => {
           return (
             <Project
