@@ -1,0 +1,9 @@
+---
+const { label, title, description } = Astro.props
+---
+
+<div>
+  {label && <small class={`block text-sm mb-1 font-semibold uppercase ${label.color}`}>{label.text}</small>}
+  <h2 class="text-3xl font-clash">{title}</h2>
+  <p class="text-lg text-black mt-1">{description}</p>
+</div>

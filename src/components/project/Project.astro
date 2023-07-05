@@ -2,6 +2,7 @@
 import Tool from "./Tool.astro"
 import ProjectLink from "./ProjectLink.astro"
 import ProjectImage from "./ProjectImage.astro"
+import ProjectInfo from "./ProjectInfo.astro";
 
 const { lazy = true, img_file_name, label, title, description, tools, url, url_text, github_url } = Astro.props
 ---
@@ -17,11 +18,11 @@ const { lazy = true, img_file_name, label, title, description, tools, url, url_t
     </div>
 
     <div class="flex flex-col justify-center">
-      <div>
-        {label && <small class={`block text-sm mb-1 font-semibold uppercase ${label.color}`}>{label.text}</small>}
-        <h2 class="text-3xl font-clash">{title}</h2>
-        <p class="text-lg text-black mt-1">{description}</p>
-      </div>
+      <ProjectInfo
+        label={label}
+        title={title}
+        description={description}
+      />
 
       <div class="mt-1 mb-3">
         {tools.map((tool: {id: String, name: String}, i: Number) => {
