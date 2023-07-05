@@ -2,6 +2,12 @@
 import ExternalIcon from "../icons/ExternalIcon.astro"
 import GithubIcon from "../icons/GithubIcon.astro"
 
+interface Props {
+  url: string
+  url_text: string
+  github_url: string | null
+}
+
 const { url, url_text, github_url } = Astro.props
 ---
 

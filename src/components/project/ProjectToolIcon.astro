@@ -23,6 +23,12 @@ import ChromeIcon from "../icons/tech/ChromeIcon.astro"
 import JavascriptIcon from "../icons/tech/JavascriptIcon.astro"
 import FabricIcon from "../icons/tech/FabricIcon.astro"
 
+import type { ToolIdType } from "../../types"
+
+type Props = {
+  tool_id: ToolIdType | null
+}
+
 const { tool_id } = Astro.props
 ---
 

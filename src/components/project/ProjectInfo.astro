@@ -1,4 +1,13 @@
 ---
+interface Props {
+  title: string
+  description: string
+  label: {
+    text: string
+    color: string
+  }
+}
+
 const { label, title, description } = Astro.props
 ---
 
