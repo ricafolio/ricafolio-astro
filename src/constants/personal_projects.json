@@ -58,6 +58,32 @@
     "github_url": "https://github.com/ricafolio/orangey-vscode-theme"
   },
   {
+    "img_file_name": "mml",
+    "label": {
+      "text": "[IN PROGRESS] Full Stack Project",
+      "color": "text-orange-500"
+    },
+    "title": "MyManhwaList",
+    "description": "Manhwa reading lists exchange community",
+    "tools": [
+      {
+        "id": "next",
+        "name": "Next.js"
+      },
+      {
+        "id": "strapi",
+        "name": "Strapi"
+      },
+      {
+        "id": "tailwind",
+        "name": "Tailwind CSS"
+      }
+    ],
+    "url": "https://mymanhwalist-next.vercel.app",
+    "url_text": "View project",
+    "github_url": null
+  },
+  {
     "img_file_name": "hcs",
     "label": {
       "text": "Extension Project",
@@ -108,35 +134,5 @@
     "url": "https://box-transform-visualizer.vercel.app/",
     "url_text": "View project",
     "github_url": "https://github.com/ricafolio/box-transform-visualizer"
-  },
-  {
-    "img_file_name": "mml",
-    "label": {
-      "text": "[IN PROGRESS] Full Stack Project",
-      "color": "text-orange-500"
-    },
-    "title": "MyManhwaList",
-    "description": "Manhwa reading lists exchange community",
-    "tools": [
-      {
-        "id": "next",
-        "name": "Next.js"
-      },
-      {
-        "id": "react",
-        "name": "React"
-      },
-      {
-        "id": "strapi",
-        "name": "Strapi"
-      },
-      {
-        "id": "tailwind",
-        "name": "Tailwind CSS"
-      }
-    ],
-    "url": "https://mymanhwalist-next.vercel.app",
-    "url_text": "View project",
-    "github_url": null
   }
 ]
