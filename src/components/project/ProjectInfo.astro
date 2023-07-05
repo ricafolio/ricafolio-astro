@@ -15,7 +15,11 @@ const { label, title, description } = Astro.props
   {label && (
     <small class:list={[
       "block text-sm mb-1 font-semibold uppercase",
-      label.color
+      {
+        "text-lime-600": label.color === "lime",
+        "text-orange-600": label.color === "orange",
+        "text-red-600": label.color === "red",
+      }
     ]}>
       {label.text}
     </small>

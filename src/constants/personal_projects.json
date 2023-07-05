@@ -4,7 +4,7 @@
     "img_file_name": "collage",
     "label": {
       "text": "Front-end Project",
-      "color": "text-lime-600"
+      "color": "lime"
     },
     "title": "Collage Canvas",
     "description": "Image collage maker with customizable filter options",
@@ -22,7 +22,7 @@
     "img_file_name": "destinasyon",
     "label": {
       "text": "Full stack Project",
-      "color": "text-lime-600"
+      "color": "lime"
     },
     "title": "Destinasyon",
     "description": "AI tool to discover the best travel destinations in the Philippines",
@@ -39,7 +39,7 @@
     "img_file_name": "orangey",
     "label": {
       "text": "Extension Project",
-      "color": "text-lime-600"
+      "color": "lime"
     },
     "title": "Orangey",
     "description": "Warm dark theme for VSCode",
@@ -61,7 +61,7 @@
     "img_file_name": "mml",
     "label": {
       "text": "[IN PROGRESS] Full Stack Project",
-      "color": "text-orange-500"
+      "color": "orange"
     },
     "title": "MyManhwaList",
     "description": "Manhwa reading lists exchange community",
@@ -87,7 +87,7 @@
     "img_file_name": "hcs",
     "label": {
       "text": "Extension Project",
-      "color": "text-lime-600"
+      "color": "lime"
     },
     "title": "Hide ChatGPT Sidebar",
     "description": "A lightweight browser extension to hide ChatGPT's sidebar",
@@ -109,7 +109,7 @@
     "img_file_name": "cbtv",
     "label": {
       "text": "Front-end Project",
-      "color": "text-lime-600"
+      "color": "lime"
     },
     "title": "CSS Box Transform Visualizer",
     "description": "Simple playground to quickly generate code for CSS3 Transforms",
