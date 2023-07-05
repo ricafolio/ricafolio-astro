@@ -3,7 +3,7 @@
     "img_file_name": "chef",
     "label": {
       "text": "Front-end Project",
-      "color": "text-lime-600"
+      "color": "lime"
     },
     "title": "Chef",
     "description": "Responsive landing page for a chrome extension",
@@ -33,7 +33,7 @@
     "img_file_name": "wenmint",
     "label": {
       "text": "[Offline] Full Stack Project",
-      "color": "text-red-600"
+      "color": "red"
     },
     "title": "Wenmint.io",
     "description": "A community to keep track of upcoming NFT launch dates",
@@ -63,7 +63,7 @@
     "img_file_name": "bot",
     "label": {
       "text": "[Offline] Bot Project",
-      "color": "text-red-600"
+      "color": "red"
     },
     "title": "Premint Links Discord Bot",
     "description": "A bot used by over 300 discord servers that extracts the most recent premint links shared on Twitter.",
@@ -89,7 +89,7 @@
     "img_file_name": "cult",
     "label": {
       "text": "[Offline] Full Stack Project",
-      "color": "text-red-600"
+      "color": "red"
     },
     "title": "NFT Referral",
     "description": "An alt-resistant referral campaign implemented for an NFT project, attracting 23,000 registrations in just three days.",
