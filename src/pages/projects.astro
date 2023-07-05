@@ -5,6 +5,8 @@ import Project from "../components/project/Project.astro"
 
 import client_projects from "../constants/client_projects.json"
 import personal_projects from "../constants/personal_projects.json"
+
+import type { ProjectType } from "../types"
 ---
 
 <Layout 
@@ -28,7 +30,7 @@ import personal_projects from "../constants/personal_projects.json"
           Personal projects
         </h1>
 
-        {personal_projects.map((project) => {
+        {personal_projects.map((project: ProjectType) => {
           return (
             <Project
               lazy={project.lazy || true}
@@ -50,7 +52,7 @@ import personal_projects from "../constants/personal_projects.json"
           Solo projects for clients
         </h2>
 
-        {client_projects.map((project) => {
+        {client_projects.map((project: ProjectType) => {
           return (
             <Project
               lazy={true}

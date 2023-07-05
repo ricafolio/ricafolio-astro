@@ -1,4 +1,10 @@
 ---
+interface Props {
+  lazy?: true | false
+  img_file_name: string
+  title: string
+}
+
 const { img_file_name, title, lazy } = Astro.props
 ---
 

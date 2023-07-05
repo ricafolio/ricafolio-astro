@@ -1,5 +1,13 @@
 ---
 import ProjectToolIcon from "./ProjectToolIcon.astro"
+import type { ToolIdType } from "../../types"
+
+interface Props {
+  tool_id: ToolIdType | null
+  tool_name: string
+  tool_index: number
+  tools_length: number
+}
 
 const { tool_id, tool_name, tool_index, tools_length } = Astro.props
 ---
