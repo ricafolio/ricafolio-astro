@@ -1,6 +1,6 @@
 ---
 interface Props {
-  page: "about" | "projects"
+  page: "about" | "projects" | "uses"
 }
 
 const { page } = Astro.props
@@ -11,8 +11,8 @@ const inactiveClass = "text-zinc-600 hover:text-black active:text-zinc-800 focus
 
 <header class="flex justify-center text-sm sm:text-base mt-1">
   <div class="flex border-2 border-zinc-800 bg-amber-50 drop-shadow-[0px_5px_#000] rounded-full">
-    <a 
-      href="/" 
+    <a
+      href="/"
       class:list={[
         "px-8 py-5 ease rounded-l-full",
         page === "about" ? activeClass : inactiveClass,
@@ -20,14 +20,23 @@ const inactiveClass = "text-zinc-600 hover:text-black active:text-zinc-800 focus
     >
       About
     </a>
-    <a 
-      href="/projects" 
+    <a
+      href="/projects"
       class:list={[
         "px-8 py-5 ease rounded-l-full",
         page === "projects" ? activeClass : inactiveClass,
       ]}
     >
       Projects
+    </a>
+    <a
+      href="/uses"
+      class:list={[
+        "px-8 py-5 ease rounded-l-full",
+        page === "uses" ? activeClass : inactiveClass,
+      ]}
+    >
+      Uses
     </a>
   </div>
 </header>
