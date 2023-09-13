@@ -11,10 +11,10 @@ interface Props {
 const { url, url_text, github_url } = Astro.props
 ---
 
-<a 
-  href={url} 
-  target="_blank" 
-  rel="nofollow" 
+<a
+  href={url}
+  target="_blank"
+  rel="nofollow"
   class:list={[
     "inline-block rounded-full",
     "py-3 px-7",
@@ -31,9 +31,9 @@ const { url, url_text, github_url } = Astro.props
 
 {
   github_url && (
-    <a 
-      href={github_url} 
-      target="_blank" 
+    <a
+      href={github_url}
+      target="_blank"
       class:list={[
         "inline-block rounded-full",
         "ml-2 py-2 px-3",
