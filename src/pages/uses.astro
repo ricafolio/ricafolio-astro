@@ -17,6 +17,7 @@ import NavBar from "../components/NavBar.astro"
       "px-4 md:px-12"
     ]}>
 			<div class:list={[
+        "min-w-[60%]",
         "flex flex-row flex-wrap align-center",
         "mx-auto mb-8 md:mb-32"
       ]}>
@@ -24,11 +25,11 @@ import NavBar from "../components/NavBar.astro"
           Uses
         </h1>
 
-        <aside class="w-full md:w-6/12 mb-6">
-          <section>
+        <aside class="w-full md:w-6/12 mb-6 pr-3">
+          <section class="p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md rounded-md border-2 border-zinc-900">
             <h2 class="w-full font-semibold font-clash uppercase text-3xl">Desk setup</h2>
 
-            <div>
+            <div class="mt-2">
               <b class="block">Computer:</b>
               <ul class="list-[square]">
                 <li>Xiaomi Mi Curved 34” Monitor</li>
@@ -50,10 +51,10 @@ import NavBar from "../components/NavBar.astro"
             </div>
           </section>
 
-          <section class="mt-8">
+          <section class="mt-5 p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md rounded-md border-2 border-zinc-900">
             <h2 class="w-full font-semibold font-clash uppercase text-3xl">Software</h2>
 
-            <div>
+            <div class="mt-2">
               <b class="block">Development:</b>
               <ul class="list-[square]">
                 <li>Visual Studio Code</li>
@@ -103,10 +104,10 @@ import NavBar from "../components/NavBar.astro"
         </aside>
 
         <aside class="w-full md:w-6/12 mb-6">
-          <section>
+          <section class="p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md rounded-md border-2 border-zinc-900">
             <h2 class="w-full font-semibold font-clash uppercase text-3xl">Audio setup</h2>
 
-            <div>
+            <div class="mt-2">
               <b class="block">Headphones:</b>
               <ul class="list-[square]">
                 <li>Audio Technica R70X 🖤</li>
@@ -133,10 +134,10 @@ import NavBar from "../components/NavBar.astro"
             </div>
           </section>
 
-          <section class="mt-8">
+          <section class="mt-6 p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md rounded-md border-2 border-zinc-900">
             <h2 class="w-full font-semibold font-clash uppercase text-3xl">Browser</h2>
 
-            <div>
+            <div class="mt-2">
               <b class="block">Browsers:</b>
               <ul class="list-[square]">
                 <li>Google Chrome</li>
@@ -173,7 +174,7 @@ import NavBar from "../components/NavBar.astro"
 
 <style>
 	body {
-		background: linear-gradient(0deg, #56ff00, #fffbeb 10%);
+		background-color: #fffbeb;
 	}
 
   ul {
