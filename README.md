@@ -1,7 +1,6 @@
 # Rica's Portfolio 
-> 🌈 Hello friend, thanks for stopping by!
-
-> <a href="https://ricafolio.me/" target="_blank">https://ricafolio.me</a>
+> 🌈 Hello friend, thanks for stopping by! <br/>
+> 🏠 <a href="https://ricafolio.me/" target="_blank">https://ricafolio.me</a>
 
 ### Built with
 - [Astro](https://docs.astro.build)
@@ -13,5 +12,7 @@
 ![Preview screenshot](https://i.imgur.com/8RZGTJk.png)
 
 ## Old Version
-Old version of my portfolio is also available here: [old.ricafolio.me](https://old.ricafolio.me)
+> Old version of my portfolio is also available here: 
+> [old.ricafolio.me](https://old.ricafolio.me)
+
 ![Old preview screenshot](https://i.imgur.com/XjEgCyk.png)
