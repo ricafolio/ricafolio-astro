@@ -5,15 +5,15 @@ import ProjectLink from "./ProjectLink.astro"
 import ProjectTool from "./ProjectTool.astro"
 import type { ToolType } from "../../types"
 
-const { 
-  lazy = true, 
-  img_file_name, 
-  label, 
-  title, 
-  description, 
-  tools, 
-  url, 
-  url_text, 
+const {
+  lazy = true,
+  img_file_name,
+  label,
+  title,
+  description,
+  tools,
+  url,
+  url_text,
   github_url
 } = Astro.props
 ---
@@ -43,7 +43,7 @@ const {
       <div class="mt-1 mb-3">
         {tools.map((tool: ToolType, i: number) => {
           return (
-            <ProjectTool 
+            <ProjectTool
               tool_index={i}
               tool_id={tool.id}
               tool_name={tool.name}
@@ -54,9 +54,9 @@ const {
       </div>
 
       <div class="flex items-center">
-        <ProjectLink 
-          url={url} 
-          url_text={url_text} 
+        <ProjectLink
+          url={url}
+          url_text={url_text}
           github_url={github_url}
         />
       </div>
