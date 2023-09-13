@@ -1,5 +1,7 @@
-# Ricafolio | Web Developer Portfolio
-Hello friend, thanks for stopping by! 🌈
+# Rica's Portfolio 
+> 🌈 Hello friend, thanks for stopping by!
+
+> <a href="https://ricafolio.me/" target="_blank">https://ricafolio.me</a>
 
 ### Built with
 - [Astro](https://docs.astro.build)
