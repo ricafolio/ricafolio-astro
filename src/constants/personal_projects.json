@@ -58,6 +58,28 @@
     "github_url": "https://github.com/ricafolio/orangey-vscode-theme"
   },
   {
+    "img_file_name": "horizon",
+    "label": {
+      "text": "Extension Project",
+      "color": "lime"
+    },
+    "title": "Horizon Muted",
+    "description": "A modified fork of Horizon Theme for VSCode, featuring a muted color palette",
+    "tools": [
+      {
+        "id": "vscode",
+        "name": "Visual Studio Code API"
+      },
+      {
+        "id": "package",
+        "name": "Package"
+      }
+    ],
+    "url": "https://marketplace.visualstudio.com/items?itemName=ricafolio.horizon-muted",
+    "url_text": "Download extension",
+    "github_url": "https://github.com/ricafolio/horizon-muted"
+  },
+  {
     "img_file_name": "mml",
     "label": {
       "text": "[IN PROGRESS] Full Stack Project",
@@ -84,26 +106,26 @@
     "github_url": null
   },
   {
-    "img_file_name": "hcs",
+    "img_file_name": "venus",
     "label": {
-      "text": "Extension Project",
-      "color": "lime"
+      "text": "[IN PROGRESS] Front-end Project",
+      "color": "orange"
     },
-    "title": "Hide ChatGPT Sidebar",
-    "description": "A lightweight browser extension to hide ChatGPT's sidebar",
+    "title": "VENUS",
+    "description": "Responsive landing page with Astro JS",
     "tools": [
       {
-        "id": "chromeapi",
-        "name": "Chrome Extension API"
+        "id": "astro",
+        "name": "Astro"
       },
       {
-        "id": "javascript",
-        "name": "Javascript"
+        "id": "tailwind",
+        "name": "Tailwind CSS"
       }
     ],
-    "url": "https://chrome.google.com/webstore/detail/pgpgbilginopbmeoccggifljlmgehpek/",
-    "url_text": "Download extension",
-    "github_url": "https://github.com/ricafolio/hide-chatgpt-sidebar"
+    "url": "https://venus-landing-page.vercel.app/",
+    "url_text": "View project",
+    "github_url": "https://github.com/ricafolio/VENUS"
   },
   {
     "img_file_name": "cbtv",
