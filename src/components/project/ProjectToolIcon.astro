@@ -1,4 +1,5 @@
 ---
+import AstroIcon from "../icons/tech/AstroIcon.astro"
 import ReactIcon from "../icons/tech/ReactIcon.astro"
 import NextIcon from "../icons/tech/NextIcon.astro"
 import TailwindIcon from "../icons/tech/TailwindIcon.astro"
@@ -33,6 +34,7 @@ const { tool_id } = Astro.props
 ---
 
 {
+  tool_id === "astro" ? <AstroIcon /> :
   tool_id === "react" ? <ReactIcon /> :
   tool_id === "next" ? <NextIcon /> :
   tool_id === "strapi" ? <StrapiIcon /> :
