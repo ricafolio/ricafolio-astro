@@ -84,28 +84,6 @@
     "github_url": null
   },
   {
-    "img_file_name": "hcs",
-    "label": {
-      "text": "Extension Project",
-      "color": "lime"
-    },
-    "title": "Hide ChatGPT Sidebar",
-    "description": "A lightweight browser extension to hide ChatGPT's sidebar",
-    "tools": [
-      {
-        "id": "chromeapi",
-        "name": "Chrome Extension API"
-      },
-      {
-        "id": "javascript",
-        "name": "Javascript"
-      }
-    ],
-    "url": "https://chrome.google.com/webstore/detail/pgpgbilginopbmeoccggifljlmgehpek/",
-    "url_text": "Download extension",
-    "github_url": "https://github.com/ricafolio/hide-chatgpt-sidebar"
-  },
-  {
     "img_file_name": "cbtv",
     "label": {
       "text": "Front-end Project",
