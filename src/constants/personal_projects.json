@@ -106,6 +106,28 @@
     "github_url": null
   },
   {
+    "img_file_name": "venus",
+    "label": {
+      "text": "[IN PROGRESS] Front-end Project",
+      "color": "orange"
+    },
+    "title": "VENUS",
+    "description": "Responsive landing page with Astro JS",
+    "tools": [
+      {
+        "id": "astro",
+        "name": "Astro"
+      },
+      {
+        "id": "tailwind",
+        "name": "Tailwind CSS"
+      }
+    ],
+    "url": "https://venus-landing-page.vercel.app/",
+    "url_text": "View project",
+    "github_url": "https://github.com/ricafolio/VENUS"
+  },
+  {
     "img_file_name": "cbtv",
     "label": {
       "text": "Front-end Project",
