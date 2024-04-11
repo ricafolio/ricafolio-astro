@@ -1,4 +1,6 @@
-[
+import type { ProjectType } from "../types"
+
+export const client_projects: ProjectType[] = [
   {
     "img_file_name": "chef",
     "label": {

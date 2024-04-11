@@ -22,6 +22,7 @@ export type ToolIdType =
   | "chromeapi"
   | "javascript"
   | "fabric"
+  | "astro"
 
 export interface ToolType {
   id: ToolIdType | null
@@ -29,7 +30,7 @@ export interface ToolType {
 }
 
 export interface ProjectType {
-  lazy?: true | false
+  lazy?: boolean
   img_file_name: string
   label: {
     text: string
