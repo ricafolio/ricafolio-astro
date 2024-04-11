@@ -22,6 +22,7 @@ export type ToolIdType =
   | "chromeapi"
   | "javascript"
   | "fabric"
+  | "astro"
 
 export interface ToolType {
   id: ToolIdType | null
