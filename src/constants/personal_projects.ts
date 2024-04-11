@@ -1,4 +1,6 @@
-[
+import type { ProjectType } from "../types"
+
+export const personal_projects: ProjectType[] = [
   {
     "lazy": false,
     "img_file_name": "collage",
@@ -9,9 +11,9 @@
     "title": "Collage Canvas",
     "description": "Image collage maker with customizable filter options",
     "tools": [
-      {"id": "react", "name": "React"},
-      {"id": "fabric", "name": "Fabric.js"},
-      {"id": "html", "name": "HTML5 Canvas"}
+      { "id": "react", "name": "React" },
+      { "id": "fabric", "name": "Fabric.js" },
+      { "id": "html", "name": "HTML5 Canvas" }
     ],
     "url": "https://collage-canvas.vercel.app/",
     "url_text": "View Project",
@@ -27,9 +29,9 @@
     "title": "Destinasyon",
     "description": "AI tool to discover the best travel destinations in the Philippines",
     "tools": [
-      {"id": "next", "name": "Next.js"},
-      {"id": "openaiapi", "name": "OpenAI API"},
-      {"id": "googleapi", "name": "Google Places API"}
+      { "id": "next", "name": "Next.js" },
+      { "id": "openaiapi", "name": "OpenAI API" },
+      { "id": "googleapi", "name": "Google Places API" }
     ],
     "url": "https://app.destinasyon.xyz/",
     "url_text": "View Project",

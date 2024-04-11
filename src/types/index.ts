@@ -30,7 +30,7 @@ export interface ToolType {
 }
 
 export interface ProjectType {
-  lazy?: true | false
+  lazy?: boolean
   img_file_name: string
   label: {
     text: string
