@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from "astro:transitions"
+
 interface Props {
 	title?: string
 	description?: string
@@ -38,6 +40,7 @@ const fontshareUrl = "https://api.fontshare.com"
 		<link rel="dns-prefetch" href={fontshareUrl} />
 		<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,500&f[]=satoshi@700,500&display=swap" rel="stylesheet">
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<slot />
