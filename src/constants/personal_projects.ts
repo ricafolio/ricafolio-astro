@@ -40,11 +40,11 @@ export const personal_projects: ProjectType[] = [
   {
     "img_file_name": "orangey",
     "label": {
-      "text": "Extension Project",
+      "text": "VSCode Extension",
       "color": "lime"
     },
     "title": "Orangey",
-    "description": "Warm dark theme for VSCode",
+    "description": "Warm dark theme for VSCode with variations",
     "tools": [
       {
         "id": "vscode",
@@ -62,11 +62,11 @@ export const personal_projects: ProjectType[] = [
   {
     "img_file_name": "horizon",
     "label": {
-      "text": "Extension Project",
+      "text": "VSCode Extension",
       "color": "lime"
     },
     "title": "Horizon Muted",
-    "description": "A modified fork of Horizon Theme, featuring a muted color palette for VSCode",
+    "description": "A modified fork of Horizon Theme, featuring a muted color palette",
     "tools": [
       {
         "id": "vscode",
