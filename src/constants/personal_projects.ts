@@ -8,7 +8,7 @@ export const personal_projects: ProjectType[] = [
       "text": "Front-end Project",
       "color": "lime"
     },
-    "title": "Collage Canvas",
+    "title": "Collage Maker",
     "description": "Image collage maker with customizable filter options",
     "tools": [
       { "id": "react", "name": "React" },
@@ -66,7 +66,7 @@ export const personal_projects: ProjectType[] = [
       "color": "lime"
     },
     "title": "Horizon Muted",
-    "description": "A modified fork of Horizon Theme for VSCode, featuring a muted color palette",
+    "description": "A modified fork of Horizon Theme, featuring a muted color palette for VSCode",
     "tools": [
       {
         "id": "vscode",
@@ -114,7 +114,7 @@ export const personal_projects: ProjectType[] = [
       "color": "orange"
     },
     "title": "VENUS",
-    "description": "Responsive landing page with Astro JS",
+    "description": "Responsive landing page made with Astro JS",
     "tools": [
       {
         "id": "astro",
