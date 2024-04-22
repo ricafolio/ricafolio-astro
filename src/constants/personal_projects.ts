@@ -15,7 +15,7 @@ export const personal_projects: ProjectType[] = [
       { "id": "fabric", "name": "Fabric.js" },
       { "id": "html", "name": "HTML5 Canvas" }
     ],
-    "url": "https://collage-canvas.vercel.app/",
+    "url": "https://collage-maker.ricafolio.dev/",
     "url_text": "View Project",
     "github_url": "https://github.com/ricafolio/react-canvas-collage-maker"
   },
@@ -33,7 +33,7 @@ export const personal_projects: ProjectType[] = [
       { "id": "openaiapi", "name": "OpenAI API" },
       { "id": "googleapi", "name": "Google Places API" }
     ],
-    "url": "https://app.destinasyon.xyz/",
+    "url": "https://destinasyon.ricafolio.dev/",
     "url_text": "View Project",
     "github_url": "https://github.com/ricafolio/destinasyon-app"
   },
