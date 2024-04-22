@@ -8,14 +8,14 @@ export const personal_projects: ProjectType[] = [
       "text": "Front-end Project",
       "color": "lime"
     },
-    "title": "Collage Canvas",
+    "title": "Collage Maker",
     "description": "Image collage maker with customizable filter options",
     "tools": [
       { "id": "react", "name": "React" },
       { "id": "fabric", "name": "Fabric.js" },
       { "id": "html", "name": "HTML5 Canvas" }
     ],
-    "url": "https://collage-canvas.vercel.app/",
+    "url": "https://collage-maker.ricafolio.dev/",
     "url_text": "View Project",
     "github_url": "https://github.com/ricafolio/react-canvas-collage-maker"
   },
@@ -33,18 +33,18 @@ export const personal_projects: ProjectType[] = [
       { "id": "openaiapi", "name": "OpenAI API" },
       { "id": "googleapi", "name": "Google Places API" }
     ],
-    "url": "https://app.destinasyon.xyz/",
+    "url": "https://destinasyon.ricafolio.dev/",
     "url_text": "View Project",
     "github_url": "https://github.com/ricafolio/destinasyon-app"
   },
   {
     "img_file_name": "orangey",
     "label": {
-      "text": "Extension Project",
+      "text": "VSCode Extension",
       "color": "lime"
     },
     "title": "Orangey",
-    "description": "Warm dark theme for VSCode",
+    "description": "Warm dark theme for VSCode with variations",
     "tools": [
       {
         "id": "vscode",
@@ -62,11 +62,11 @@ export const personal_projects: ProjectType[] = [
   {
     "img_file_name": "horizon",
     "label": {
-      "text": "Extension Project",
+      "text": "VSCode Extension",
       "color": "lime"
     },
     "title": "Horizon Muted",
-    "description": "A modified fork of Horizon Theme for VSCode, featuring a muted color palette",
+    "description": "A modified fork of Horizon Theme, featuring a muted color palette",
     "tools": [
       {
         "id": "vscode",
@@ -114,7 +114,7 @@ export const personal_projects: ProjectType[] = [
       "color": "orange"
     },
     "title": "VENUS",
-    "description": "Responsive landing page with Astro JS",
+    "description": "Responsive landing page made with Astro JS",
     "tools": [
       {
         "id": "astro",
