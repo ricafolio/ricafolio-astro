@@ -110,7 +110,7 @@ export const personal_projects: ProjectType[] = [
   {
     "img_file_name": "venus",
     "label": {
-      "text": "[IN PROGRESS] Front-end Project",
+      "text": "Web Design Project",
       "color": "orange"
     },
     "title": "VENUS",
