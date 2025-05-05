@@ -14,66 +14,63 @@ import type { ProjectType } from "../types"
   description="The collection of projects I worked on / I'm working on."
   doIndex={false}
 >
-	<div class="transition-fade text-black">
+  <div class="transition-fade text-black">
     <NavBar page="projects" />
 
-		<main class:list={[
-      "container flex flex-col",
-      "mx-auto mt-16",
-      "px-4 md:px-12"
-    ]}>
-			<div class:list={[
-        "flex flex-row flex-wrap align-center",
-        "mx-auto mb-8 md:mb-32"
-      ]}>
-				<h1 class="w-full mb-6 font-semibold font-clash uppercase text-3xl sm:text-4xl">
+    <main class:list={["container flex flex-col", "mx-auto mt-16", "px-4 md:px-12"]}>
+      <div class:list={["flex flex-row flex-wrap align-center", "mx-auto mb-8 md:mb-32"]}>
+        <h1 class="w-full mb-6 font-semibold font-clash uppercase text-3xl sm:text-4xl">
           Personal projects
         </h1>
 
-        {personal_projects.map((project: ProjectType) => {
-          return (
-            <Project
-              lazy={project.lazy || true}
-              img_file_name={project.img_file_name}
-              label={project.label}
-              title={project.title}
-              description={project.description}
-              tools={project.tools}
-              url={project.url}
-              url_text={project.url_text}
-              github_url={project.github_url}
-            />
-          )
-        })}
-			</div>
+        {
+          personal_projects.map((project: ProjectType) => {
+            return (
+              <Project
+                lazy={project.lazy || true}
+                img_file_name={project.img_file_name}
+                label={project.label}
+                title={project.title}
+                description={project.description}
+                tools={project.tools}
+                url={project.url}
+                url_text={project.url_text}
+                github_url={project.github_url}
+              />
+            )
+          })
+        }
+      </div>
 
       <div class="hidden mx-auto flex-row flex-wrap align-center mb-8 md:mb-32">
-				<h2 class="w-full text-3xl sm:text-4xl font-semibold font-clash mb-6 uppercase">
+        <h2 class="w-full text-3xl sm:text-4xl font-semibold font-clash mb-6 uppercase">
           Solo projects for clients
         </h2>
 
-        {client_projects.map((project: ProjectType) => {
-          return (
-            <Project
-              lazy={true}
-              img_file_name={project.img_file_name}
-              label={project.label}
-              title={project.title}
-              description={project.description}
-              tools={project.tools}
-              url={project.url}
-              url_text={project.url_text}
-              github_url={project.github_url}
-            />
-          )
-        })}
+        {
+          client_projects.map((project: ProjectType) => {
+            return (
+              <Project
+                lazy={true}
+                img_file_name={project.img_file_name}
+                label={project.label}
+                title={project.title}
+                description={project.description}
+                tools={project.tools}
+                url={project.url}
+                url_text={project.url_text}
+                github_url={project.github_url}
+              />
+            )
+          })
+        }
       </div>
-		</main>
+    </main>
   </div>
 </Layout>
 
 <style>
-	body {
-		background-color: #fffbeb;
-	}
+  body {
+    background-color: #fffbeb;
+  }
 </style>

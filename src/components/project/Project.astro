@@ -14,51 +14,43 @@ const {
   tools,
   url,
   url_text,
-  github_url
+  github_url,
 } = Astro.props
 ---
 
 <section class="w-full md:w-6/12 mb-12 md:mb-6">
-  <div class:list={[
-    "bg-card drop-shadow-[5px_5px_#000] rounded-md",
-    "p-5 md:mr-4",
-    "border-2 border-zinc-900",
-    "transition-all"
-  ]}>
+  <div
+    class:list={[
+      "bg-card drop-shadow-[5px_5px_#000] rounded-md",
+      "p-5 md:mr-4",
+      "border-2 border-zinc-900",
+      "transition-all",
+    ]}
+  >
     <div class="mb-5 bg-[#ececcf] rounded-md">
-      <ProjectImage
-        img_file_name={img_file_name}
-        title={title}
-        lazy={lazy}
-      />
+      <ProjectImage img_file_name={img_file_name} title={title} lazy={lazy} />
     </div>
 
     <div class="flex flex-col justify-center">
-      <ProjectInfo
-        label={label}
-        title={title}
-        description={description}
-      />
+      <ProjectInfo label={label} title={title} description={description} />
 
       <div class="mt-1 mb-3">
-        {tools.map((tool: ToolType, i: number) => {
-          return (
-            <ProjectTool
-              tool_index={i}
-              tool_id={tool.id}
-              tool_name={tool.name}
-              tools_length={tools.length}
-            />
-          )
-        })}
+        {
+          tools.map((tool: ToolType, i: number) => {
+            return (
+              <ProjectTool
+                tool_index={i}
+                tool_id={tool.id}
+                tool_name={tool.name}
+                tools_length={tools.length}
+              />
+            )
+          })
+        }
       </div>
 
       <div class="flex items-center">
-        <ProjectLink
-          url={url}
-          url_text={url_text}
-          github_url={github_url}
-        />
+        <ProjectLink url={url} url_text={url_text} github_url={github_url} />
       </div>
     </div>
   </div>

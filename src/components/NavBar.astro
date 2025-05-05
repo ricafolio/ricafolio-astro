@@ -13,10 +13,7 @@ const inactiveClass = "text-zinc-600 hover:text-black active:text-zinc-800 focus
   <div class="flex border-2 border-zinc-800 bg-amber-50 drop-shadow-[0px_5px_#000] rounded-full">
     <a
       href="/"
-      class:list={[
-        "px-8 py-5 ease rounded-l-full",
-        page === "about" ? activeClass : inactiveClass,
-      ]}
+      class:list={["px-8 py-5 ease rounded-l-full", page === "about" ? activeClass : inactiveClass]}
     >
       About
     </a>

@@ -7,70 +7,67 @@ import LongStrip from "../components/LongStrip.astro"
 
 <Layout doIndex={true}>
   <div class="container height-fix text-black">
-		<div class="height-fix-inner flex">
-			<div class:list={[
-				"hidden bg-black",
-				"sm:block sm:w-[2rem] sm:flex-none"
-			]}>
-				<LongStrip amount={5} />
-			</div>
+    <div class="height-fix-inner flex">
+      <div class:list={["hidden bg-black", "sm:block sm:w-[2rem] sm:flex-none"]}>
+        <LongStrip amount={5} />
+      </div>
 
-			<div class:list={[
-				"w-full overflow-hidden",
-				"flex flex-col justify-between",
-				"sm:flex-1"
-			]}>
-				<NavBar page="about" />
+      <div class:list={["w-full overflow-hidden", "flex flex-col justify-between", "sm:flex-1"]}>
+        <NavBar page="about" />
 
-				<main class="container mx-auto flex flex-col justify-evenly overflow-hidden">
-					<div class:list={[
-						"flex flex-col justify-center align-center",
-						"w-full pl-8 pr-3 mx-auto",
-						"sm:w-4/6 sm:px-0",
-						"lg:w-3/6",
-					]}>
-						<span id="emoji" class:list={[
-							"text-4xl block mb-4",
-							"lg:text-6xl",
-							"sm:text-5xl"
-						]}>
-							👋
-						</span>
-						<h1 class:list={[
-							"select-none mb-2",
-							"text-4xl font-semibold font-clash uppercase",
-							"sm:text-5xl lg:text-6xl"
-						]}>
-							Hello! I'm <span id="rica" class="styled-text border-2 sm:border-3 px-1 sm:px-3">Rica</span>,
-							<span class="block">A web developer based in <span id="ph" class="ph-text">Philippines</span>.</span>
-						</h1>
-					</div>
-				</main>
+        <main class="container mx-auto flex flex-col justify-evenly overflow-hidden">
+          <div
+            class:list={[
+              "flex flex-col justify-center align-center",
+              "w-full pl-8 pr-3 mx-auto",
+              "sm:w-4/6 sm:px-0",
+              "lg:w-3/6",
+            ]}
+          >
+            <span id="emoji" class:list={["text-4xl block mb-4", "lg:text-6xl", "sm:text-5xl"]}>
+              👋
+            </span>
+            <h1
+              class:list={[
+                "select-none mb-2",
+                "text-4xl font-semibold font-clash uppercase",
+                "sm:text-5xl lg:text-6xl",
+              ]}
+            >
+              Hello! I'm <span id="rica" class="styled-text border-2 sm:border-3 px-1 sm:px-3"
+                >Rica</span
+              >,
+              <span class="block"
+                >A web developer based in <span id="ph" class="ph-text">Philippines</span>.</span
+              >
+            </h1>
+          </div>
+        </main>
 
-				<LinkBar />
-			</div>
-		</div>
+        <LinkBar />
+      </div>
+    </div>
   </div>
 
-	<script src="../scripts/index.js"></script>
+  <script src="../scripts/index.js"></script>
 </Layout>
 
 <style>
   body {
     background: linear-gradient(0deg, #56ff00, #fffbeb 200px);
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
-	.height-fix {
-		position: fixed;
-		inset: 0;
-		height: 100%;
-	}
-	.height-fix-inner {
-		height: 100%;
-		width: 100vw;
-	}
+  .height-fix {
+    position: fixed;
+    inset: 0;
+    height: 100%;
+  }
+  .height-fix-inner {
+    height: 100%;
+    width: 100vw;
+  }
   .styled-text {
     display: inline-block;
     background-color: #56ff00;
@@ -82,11 +79,11 @@ import LongStrip from "../components/LongStrip.astro"
     border-color: #000;
     box-shadow: 3px 3px #000;
   }
-	.ph-text {
-		display: inline-block;
+  .ph-text {
+    display: inline-block;
     transition: all ease-in-out 200ms;
-	}
-	.ph-text:hover {
-		transform: skew(-8deg, 0deg);
-	}
+  }
+  .ph-text:hover {
+    transform: skew(-8deg, 0deg);
+  }
 </style>

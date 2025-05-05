@@ -3,179 +3,170 @@ import Layout from "../layouts/Layout.astro"
 import NavBar from "../components/NavBar.astro"
 ---
 
-<Layout
-  title="ricafolio · uses"
-  description="My tech setup :)"
-  doIndex={true}
-/>
-  <div class="transition-fade text-black">
-    <NavBar page="uses" />
+<Layout title="ricafolio · uses" description="My tech setup :)" doIndex={true} />
+<div class="transition-fade text-black">
+  <NavBar page="uses" />
 
-    <main class:list={[
-      "container flex flex-col",
-      "mx-auto my-16",
-      "px-4 md:px-12"
-    ]}>
-			<div class:list={[
-        "min-w-[60%]",
-        "flex flex-row flex-wrap align-center",
-        "mx-auto mb-8 md:mb-32"
-      ]}>
-				<h1 class="w-full mb-6 font-semibold font-clash uppercase text-3xl sm:text-4xl">
-          Uses
-        </h1>
+  <main class:list={["container flex flex-col", "mx-auto my-16", "px-4 md:px-12"]}>
+    <div
+      class:list={["min-w-[60%]", "flex flex-row flex-wrap align-center", "mx-auto mb-8 md:mb-32"]}
+    >
+      <h1 class="w-full mb-6 font-semibold font-clash uppercase text-3xl sm:text-4xl">Uses</h1>
 
-        <aside class="w-full md:w-6/12 mb-6 pr-3">
-          <section class="p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md border-2 border-zinc-900">
-            <h2 class="w-full font-semibold font-clash uppercase text-3xl">Desk setup</h2>
+      <aside class="w-full md:w-6/12 mb-6 pr-3">
+        <section class="p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md border-2 border-zinc-900">
+          <h2 class="w-full font-semibold font-clash uppercase text-3xl">Desk setup</h2>
 
-            <div class="mt-2">
-              <b class="block">Computer:</b>
-              <ul class="list-[square]">
-                <li>Xiaomi Mi Curved 34” Monitor</li>
-                <li>NVIDIA GeForce® GTX 1650</li>
-                <li>AMD Ryzen™ 3 5300U</li>
-                <li>Microsoft Windows 10</li>
-                <li>Logitech MX Anywhere 3 Mouse</li>
-                <li>Royal Kludge H81 Keyboard</li>
-              </ul>
-            </div>
+          <div class="mt-2">
+            <b class="block">Computer:</b>
+            <ul class="list-[square]">
+              <li>Xiaomi Mi Curved 34” Monitor</li>
+              <li>NVIDIA GeForce® GTX 1650</li>
+              <li>AMD Ryzen™ 3 5300U</li>
+              <li>Microsoft Windows 10</li>
+              <li>Logitech MX Anywhere 3 Mouse</li>
+              <li>Royal Kludge H81 Keyboard</li>
+            </ul>
+          </div>
 
-            <div>
-              <b class="block mt-2">Others:</b>
-              <ul class="list-[square]">
-                <li>Macbook Pro M1 2020</li>
-                <li>Vention Type-C to DP Adapter</li>
-                <li>Merryfair Wau</li>
-              </ul>
-            </div>
-          </section>
+          <div>
+            <b class="block mt-2">Others:</b>
+            <ul class="list-[square]">
+              <li>Macbook Pro M1 2020</li>
+              <li>Vention Type-C to DP Adapter</li>
+              <li>Merryfair Wau</li>
+            </ul>
+          </div>
+        </section>
 
-          <section class="mt-5 p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md border-2 border-zinc-900">
-            <h2 class="w-full font-semibold font-clash uppercase text-3xl">Software</h2>
+        <section
+          class="mt-5 p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md border-2 border-zinc-900"
+        >
+          <h2 class="w-full font-semibold font-clash uppercase text-3xl">Software</h2>
 
-            <div class="mt-2">
-              <b class="block">Development:</b>
-              <ul class="list-[square]">
-                <li>Visual Studio Code</li>
-                <li>Hyper Terminal</li>
-                <li>Chrome DevTools</li>
-                <li>Google Lighthouse</li>
-                <li>Github Desktop</li>
-                <li>TablePlus</li>
-              </ul>
-            </div>
+          <div class="mt-2">
+            <b class="block">Development:</b>
+            <ul class="list-[square]">
+              <li>Visual Studio Code</li>
+              <li>Hyper Terminal</li>
+              <li>Chrome DevTools</li>
+              <li>Google Lighthouse</li>
+              <li>Github Desktop</li>
+              <li>TablePlus</li>
+            </ul>
+          </div>
 
-            <div class="mt-2">
-              <b class="block">Design:</b>
-              <ul class="list-[square]">
-                <li>Figma</li>
-                <li>Clip Studio Paint</li>
-                <li>Adobe Photoshop</li>
-              </ul>
-            </div>
+          <div class="mt-2">
+            <b class="block">Design:</b>
+            <ul class="list-[square]">
+              <li>Figma</li>
+              <li>Clip Studio Paint</li>
+              <li>Adobe Photoshop</li>
+            </ul>
+          </div>
 
-            <div class="mt-2">
-              <b class="block">VSCode Extensions:</b>
-              <ul class="list-[square]">
-                <li>Horizon Theme</li>
-                <li>Import Cost</li>
-                <li>Pretty Typescript Errors</li>
-                <li>Template String Converter</li>
-                <li>Auto Close Tag</li>
-                <li>Auto Rename Tag</li>
-                <li>vscode-icons</li>
-                <li>Bookmarks</li>
-                <li>Emmet</li>
-                <li>DupChecker</li>
-                <li>Better Comments</li>
-              </ul>
-            </div>
+          <div class="mt-2">
+            <b class="block">VSCode Extensions:</b>
+            <ul class="list-[square]">
+              <li>Horizon Theme</li>
+              <li>Import Cost</li>
+              <li>Pretty Typescript Errors</li>
+              <li>Template String Converter</li>
+              <li>Auto Close Tag</li>
+              <li>Auto Rename Tag</li>
+              <li>vscode-icons</li>
+              <li>Bookmarks</li>
+              <li>Emmet</li>
+              <li>DupChecker</li>
+              <li>Better Comments</li>
+            </ul>
+          </div>
 
-            <div class="mt-2">
-              <b class="block">Others:</b>
-              <ul class="list-[square]">
-                <li>Obsidian</li>
-                <li>OBS Studio</li>
-                <li>remove.bg</li>
-              </ul>
-            </div>
-          </section>
-        </aside>
+          <div class="mt-2">
+            <b class="block">Others:</b>
+            <ul class="list-[square]">
+              <li>Obsidian</li>
+              <li>OBS Studio</li>
+              <li>remove.bg</li>
+            </ul>
+          </div>
+        </section>
+      </aside>
 
-        <aside class="w-full md:w-6/12 mb-6">
-          <section class="p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md border-2 border-zinc-900">
-            <h2 class="w-full font-semibold font-clash uppercase text-3xl">Audio setup</h2>
+      <aside class="w-full md:w-6/12 mb-6">
+        <section class="p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md border-2 border-zinc-900">
+          <h2 class="w-full font-semibold font-clash uppercase text-3xl">Audio setup</h2>
 
-            <div class="mt-2">
-              <b class="block">Headphones:</b>
-              <ul class="list-[square]">
-                <li>Audio Technica R70X 🖤</li>
-                <li>Denon AH-D5200</li>
-              </ul>
-            </div>
+          <div class="mt-2">
+            <b class="block">Headphones:</b>
+            <ul class="list-[square]">
+              <li>Audio Technica R70X 🖤</li>
+              <li>Denon AH-D5200</li>
+            </ul>
+          </div>
 
-            <div>
-              <b class="block mt-2">Earphones:</b>
-              <ul class="list-[square]">
-                <li>Moondrop Blessing 2 Dusk</li>
-                <li>Moondrop Starfield</li>
-                <li>Etymotic ER2XR</li>
-              </ul>
-            </div>
+          <div>
+            <b class="block mt-2">Earphones:</b>
+            <ul class="list-[square]">
+              <li>Moondrop Blessing 2 Dusk</li>
+              <li>Moondrop Starfield</li>
+              <li>Etymotic ER2XR</li>
+            </ul>
+          </div>
 
-            <div>
-              <b class="block mt-2">Others:</b>
-              <ul class="list-[square]">
-                <li>iFi hip-dac 2</li>
-                <li>EarFun UBOOM L</li>
-                <li>VE Avani</li>
-              </ul>
-            </div>
-          </section>
+          <div>
+            <b class="block mt-2">Others:</b>
+            <ul class="list-[square]">
+              <li>iFi hip-dac 2</li>
+              <li>EarFun UBOOM L</li>
+              <li>VE Avani</li>
+            </ul>
+          </div>
+        </section>
 
-          <section class="mt-6 p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md border-2 border-zinc-900">
-            <h2 class="w-full font-semibold font-clash uppercase text-3xl">Browser</h2>
+        <section
+          class="mt-6 p-5 bg-card drop-shadow-[5px_5px_#000] rounded-md border-2 border-zinc-900"
+        >
+          <h2 class="w-full font-semibold font-clash uppercase text-3xl">Browser</h2>
 
-            <div class="mt-2">
-              <b class="block">Browsers:</b>
-              <ul class="list-[square]">
-                <li>Google Chrome</li>
-                <li>Microsoft Edge</li>
-                <li>Arc</li>
-              </ul>
-            </div>
+          <div class="mt-2">
+            <b class="block">Browsers:</b>
+            <ul class="list-[square]">
+              <li>Google Chrome</li>
+              <li>Microsoft Edge</li>
+              <li>Arc</li>
+            </ul>
+          </div>
 
-            <div class="mt-2">
-              <b class="block">Extensions:</b>
-              <ul class="list-[square]">
-                <li>Debug CSS 🖤</li>
-                <li>File Icons for GitHub and GitLab</li>
-                <li>JSON-LD Tester</li>
-                <li>JSON Viewer (Firefox Port)</li>
-                <li>OneTab</li>
-                <li>Stylebot</li>
-                <li>React Developer Tools</li>
-                <li>Redux DevTools</li>
-                <li>SEO META in 1 CLICK</li>
-                <li>uBlock Origin</li>
-                <li>User-Agent Switcher and Manager</li>
-                <li>VisBug</li>
-                <li>Wappalyzer</li>
-                <li>WAVE Evaluation Tool</li>
-              </ul>
-            </div>
-          </section>
-        </aside>
-      </div>
-    </main>
-  </div>
-</Layout>
+          <div class="mt-2">
+            <b class="block">Extensions:</b>
+            <ul class="list-[square]">
+              <li>Debug CSS 🖤</li>
+              <li>File Icons for GitHub and GitLab</li>
+              <li>JSON-LD Tester</li>
+              <li>JSON Viewer (Firefox Port)</li>
+              <li>OneTab</li>
+              <li>Stylebot</li>
+              <li>React Developer Tools</li>
+              <li>Redux DevTools</li>
+              <li>SEO META in 1 CLICK</li>
+              <li>uBlock Origin</li>
+              <li>User-Agent Switcher and Manager</li>
+              <li>VisBug</li>
+              <li>Wappalyzer</li>
+              <li>WAVE Evaluation Tool</li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+</div>
 
 <style>
-	body {
-		background-color: #fffbeb;
-	}
+  body {
+    background-color: #fffbeb;
+  }
 
   ul {
     padding-inline-start: 1em !important;
