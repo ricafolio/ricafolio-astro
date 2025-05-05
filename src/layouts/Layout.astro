@@ -2,50 +2,53 @@
 import { ClientRouter } from "astro:transitions"
 
 interface Props {
-	title?: string
-	description?: string
-	doIndex: boolean
+  title?: string
+  description?: string
+  doIndex: boolean
 }
 const {
-	title = "ricafolio · web developer",
-	description = "Hi! 👋 I'm Rica, a web designer & developer from Philippines. Passionate about creating visually stunning and user-friendly websites.",
-	doIndex
+  title = "ricafolio · web developer",
+  description = "Hi! 👋 I'm Rica, a web designer & developer from Philippines. Passionate about creating visually stunning and user-friendly websites.",
+  doIndex,
 } = Astro.props
 
 const url = "https://ricafolio.me"
 const fontshareUrl = "https://api.fontshare.com"
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		{!doIndex && <meta name="robots" content="noindex">}
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="theme-color" content="#000" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="title" content={title}>
-		<meta name="description" content={description}>
-		<meta property="og:type" content="website">
-		<meta property="og:title" content={title}/>
-		<meta name="og:description" content={description}>
-		<meta property="og:image" content="/og_img.png">
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content={url}>
-  	<meta name="twitter:url" content={url}>
-		<meta name="twitter:title" content={title}>
-		<meta name="twitter:description" content={description}>
-		<link rel="preconnect" href={fontshareUrl} />
-		<link rel="dns-prefetch" href={fontshareUrl} />
-		<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,500&f[]=satoshi@700,500&display=swap" rel="stylesheet">
-		<title>{title}</title>
-		<ClientRouter />
-	</head>
-	<body>
-		<slot />
-		<script type="text/javascript">
-			console.log(`
+  <head>
+    <meta charset="UTF-8" />
+    {!doIndex && <meta name="robots" content="noindex" />}
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#000" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta name="og:description" content={description} />
+    <meta property="og:image" content="/og_img.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={url} />
+    <meta name="twitter:url" content={url} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="preconnect" href={fontshareUrl} />
+    <link rel="dns-prefetch" href={fontshareUrl} />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@600,500&f[]=satoshi@700,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+    <ClientRouter />
+  </head>
+  <body>
+    <slot />
+    <script type="text/javascript">
+      console.log(`
 				┏━━━┓╋╋╋╋╋╋╋┏━┓╋╋┏┓
 				┃┏━┓┃╋╋╋╋╋╋╋┃┏┛╋╋┃┃ ^__^
 				┃┗━┛┣┳━━┳━━┳┛┗┳━━┫┃┏┳━━┓
@@ -53,28 +56,28 @@ const fontshareUrl = "https://api.fontshare.com"
 				┃┃┃┗┫┃┗━┫┏┓┃┃┃┃┗┛┃┗┫┃┗┛┃
 				┗┛┗━┻┻━━┻┛┗┛┗┛┗━━┻━┻┻━━┛
 			`)
-		</script>
-	</body>
+    </script>
+  </body>
 </html>
 
 <style is:global>
-	::selection {
-		background-color: #3cff00b5;
-	}
-	body {
-		font-family: 'Satoshi', sans-serif;
-		min-height: 100vh;
-	}
-  .tippy-box[data-theme='default'] {
-    font-family: 'Satoshi', sans-serif;
-		font-weight: bold;
-		background-color: #000;
-		color: #fff;
+  ::selection {
+    background-color: #3cff00b5;
   }
-	.tippy-arrow {
+  body {
+    font-family: "Satoshi", sans-serif;
+    min-height: 100vh;
+  }
+  .tippy-box[data-theme="default"] {
+    font-family: "Satoshi", sans-serif;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+  }
+  .tippy-arrow {
     color: #000;
-	}
-	.bg-card {
+  }
+  .bg-card {
     background: linear-gradient(0deg, #56ff00, #fffbeb 5rem);
     transition: all ease 300ms;
   }

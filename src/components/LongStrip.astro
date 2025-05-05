@@ -6,7 +6,9 @@ interface Props {
 const { amount } = Astro.props
 ---
 
-<div class="long-strip bg-black text-white overflow-hidden flex flex-col items-center justify-center">
+<div
+  class="long-strip bg-black text-white overflow-hidden flex flex-col items-center justify-center"
+>
   <div class="relative flex flex-col items-center">
     {
       [...Array(amount)].map((i) => (
