@@ -1,4 +1,3 @@
-if (window.location.pathname === '/') {
 	const rica = document.getElementById("rica")
 	const philippines = document.getElementById("ph")
 	const emoji = document.getElementById("emoji")
@@ -14,4 +13,3 @@ if (window.location.pathname === '/') {
 
 	philippines.addEventListener("mouseenter", () => { setEmoji("🇵🇭") }, false)
 	philippines.addEventListener("mouseleave", resetEmoji, false)
-}
